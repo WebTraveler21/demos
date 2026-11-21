@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>My Choice Barber – Fades, permanent curls & skägg i Uppsala</title>
+<meta name="description" content="My Choice Barber på Kungsgatan 66BA i Uppsala. Skin fades, permanent curls, skägg och brudgumspaket. 5,0 i betyg på Google och 31K följare på TikTok. Drop-in alla dagar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0c0c;--bg2:#141414;--card:#1a1a1a;--line:#2a2a2a;--text:#f3f0ea;--muted:#a19c93;--gold:#d4a84b;--gold2:#f0cf7f;--red:#d62d3a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,.logo,.bn{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.03em}
+h2{font-size:clamp(2.4rem,5.5vw,3.6rem);line-height:1;margin-bottom:14px}
+h2 span,.g{color:var(--gold)}
+.eyebrow{color:var(--gold);font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:.98rem;transition:.2s}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#111}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(212,168,75,.3)}
+.btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.stripe{height:10px;background:repeating-linear-gradient(-45deg,var(--red) 0 14px,#fff 14px 28px,#1d3f8f 28px 42px,#fff 42px 56px);opacity:.9}
+
+.demobar{position:fixed;inset:0 0 auto 0;z-index:70;background:var(--gold);color:#111;font-size:.85rem;text-align:center;padding:8px 14px;line-height:1.4}
+.demobar a{font-weight:700;text-decoration:underline}
+nav{position:fixed;inset:36px 0 auto 0;z-index:50;transition:.3s}
+nav.solid{background:rgba(12,12,12,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-size:1.7rem}
+.logo span{color:var(--gold)}
+.badge{width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none}
+.badge svg{width:30px;height:30px}
+.navlinks{display:flex;gap:26px;font-size:.9rem;color:var(--muted)}
+.navlinks a:hover{color:var(--text)}
+.navcta{padding:10px 18px;font-size:.88rem}
+@media(max-width:860px){.navlinks{display:none}}
+@media(max-width:600px){nav{top:52px}}
+
+.hero{min-height:100svh;display:flex;align-items:flex-end;position:relative;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,12,12,.35) 0%,rgba(12,12,12,.55) 45%,var(--bg) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:70px;width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.55);border:1px solid rgba(212,168,75,.4);padding:7px 14px;border-radius:999px;font-size:.85rem}
+.chip b{color:var(--gold2)}
+.hero h1{font-size:clamp(3.4rem,11vw,7.6rem);line-height:.9;margin-bottom:18px}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:clamp(1.05rem,2.2vw,1.25rem);color:#ddd;max-width:560px;margin-bottom:28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+
+.stats{background:var(--bg2);border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+.stats .wrap>div{padding:28px 10px}
+.stats strong{display:block;font-family:"Bebas Neue";font-size:2.4rem;color:var(--gold);line-height:1}
+.stats span{font-size:.84rem;color:var(--muted)}
+@media(max-width:700px){.stats .wrap{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:100px 0}
+.head{max-width:620px;margin-bottom:46px}
+.head p{color:var(--muted)}
+
+.spec{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sp{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;position:relative;overflow:hidden}
+.sp .ic{font-size:1.8rem;margin-bottom:12px}
+.sp h3{font-family:"Bebas Neue";font-size:1.9rem;font-weight:400;letter-spacing:.03em;line-height:1.05;margin-bottom:8px}
+.sp p{color:var(--muted);font-size:.93rem}
+.sp.star{grid-row:span 2;background:linear-gradient(160deg,#2a2112,#141414 60%);border-color:rgba(212,168,75,.45)}
+.sp.star h3{font-size:2.8rem;color:var(--gold2)}
+.sp.star .viral{display:inline-block;margin-top:16px;background:var(--red);color:#fff;font-weight:700;font-size:.78rem;padding:6px 12px;border-radius:999px;letter-spacing:.04em}
+.sp.star ul{list-style:none;margin-top:18px;display:grid;gap:8px;font-size:.93rem}
+.sp.star li::before{content:"✓ ";color:var(--gold)}
+@media(max-width:900px){.spec{grid-template-columns:1fr}.sp.star{grid-row:auto}}
+
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:0 60px}
+.svc{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.svc h4{font-size:1.05rem;font-weight:600}
+.svc p{font-size:.86rem;color:var(--muted)}
+.svc .price{font-family:"Bebas Neue";font-size:1.6rem;color:var(--gold);white-space:nowrap}
+.note{margin-top:22px;font-size:.82rem;color:var(--muted)}
+@media(max-width:820px){.services{grid-template-columns:1fr}}
+
+.lang{background:var(--bg2);border-block:1px solid var(--line)}
+.lang .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.langs{display:flex;flex-wrap:wrap;gap:10px}
+.langs span{border:1px solid var(--line);background:var(--card);padding:12px 18px;border-radius:14px;font-weight:600}
+.fa{font-family:Vazirmatn,sans-serif;direction:rtl}
+.lang blockquote{font-family:Vazirmatn,sans-serif;direction:rtl;font-size:1.5rem;color:var(--gold2);margin-top:18px;line-height:1.6}
+.lang small{color:var(--muted);display:block;margin-top:6px}
+@media(max-width:820px){.lang .wrap{grid-template-columns:1fr}}
+
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:12px}
+.gallery img{width:100%;height:100%;object-fit:cover;border-radius:14px;transition:.4s}
+.gallery img:hover{transform:scale(1.02)}
+.gallery .tall{grid-row:span 2}
+@media(max-width:820px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px}}
+
+.social{text-align:center}
+.tt{display:inline-flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:center;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px 34px;margin-top:10px}
+.tt .n{font-family:"Bebas Neue";font-size:3rem;line-height:1;color:var(--gold)}
+.tt .l{font-size:.82rem;color:var(--muted)}
+.tt .sep{width:1px;height:50px;background:var(--line)}
+.socials{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.rev .s{color:var(--gold);letter-spacing:3px;margin-bottom:12px}
+.rev p{margin-bottom:16px}
+.rev cite{font-style:normal;font-size:.85rem;color:var(--muted)}
+@media(max-width:900px){.reviews{grid-template-columns:1fr}}
+
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:28px}
+.info{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px}
+.info h3{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.blk{margin-bottom:24px}
+.hours{width:100%;border-collapse:collapse;font-size:.95rem}
+.hours td{padding:7px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:var(--gold2);font-weight:600}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:420px}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(1) invert(.92) contrast(.9)}
+@media(max-width:820px){.visit{grid-template-columns:1fr}}
+
+.final{text-align:center;padding:110px 0;background:radial-gradient(ellipse at center,rgba(212,168,75,.13),transparent 70%)}
+.final h2{font-size:clamp(2.8rem,8vw,5rem)}
+.final p{color:var(--muted);margin-bottom:28px}
+.final .btn{margin:6px}
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:.84rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.mbar{display:none}
+@media(max-width:700px){.mbar{display:flex;gap:8px;position:fixed;bottom:12px;left:12px;right:12px;z-index:60}.mbar .btn{flex:1;padding:14px 10px;box-shadow:0 10px 30px rgba(0,0,0,.6)}.mbar .wa{background:#25d366;color:#08240f}footer{padding-bottom:90px}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+
+/* MOBILE FIX */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(max-width:600px){
+html{font-size:14px}
+.demobar{font-size:11px;padding:6px 10px;line-height:1.35}
+.demobar .dm{display:none}
+nav{top:40px}
+.hero h1{font-size:2.5rem}
+h2{font-size:1.9rem}
+.final h2{font-size:2.2rem}
+.hero p{font-size:1rem}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="beard" viewBox="0 0 64 64"><path fill="#111" d="M14 22c0-11 8-18 18-18s18 7 18 18v4H14z"/><rect x="12" y="26" width="17" height="8" rx="3" fill="#111"/><rect x="35" y="26" width="17" height="8" rx="3" fill="#111"/><rect x="28" y="28" width="8" height="3" fill="#111"/><path fill="#111" d="M14 36c2 14 9 24 18 24s16-10 18-24c-4 4-9 5-12 3-2 2-10 2-12 0-3 2-8 1-12-3z"/><path fill="#fff" d="M26 44c3 2 9 2 12 0-2 4-10 4-12 0z"/></symbol></svg>
+
+<div class="demobar">✨ Förslag på ny hemsida för My Choice Barber – gjord av Taher Jrad. Gillar ni den? <a href="https://wa.me/306988214186">WhatsApp +30 698 821 4186</a><span class="dm"> · <a href="mailto:taxirxania21@gmail.com">taxirxania21@gmail.com</a></span></div>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#" class="logo"><span class="badge"><svg><use href="#beard"/></svg></span>MY CHOICE <span>BARBER</span></a>
+    <div class="navlinks"><a href="#specialiteter">Specialiteter</a><a href="#priser">Priser</a><a href="#galleri">Galleri</a><a href="#omdomen">Omdömen</a><a href="#hitta">Hitta hit</a></div>
+    <a href="https://wa.me/46729165697?text=Hej!%20Jag%20vill%20boka%20en%20tid." target="_blank" rel="noopener" class="btn btn-gold navcta">Boka tid</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SU5K-5VTq7teLmbEpBIVkH0lNaGZmMajFc8Ybosu6PfJ0zHdmbp9jmcQzz5O9T5QD4PPgGGiKOieqYoDtJbXaQOBTA_22J7RCK8XfG0WWqc0yDA6N4CYnKelkhVy3SFOZDRJ0KWwzuvAxw=w2000" alt="My Choice Barber på Kungsgatan 66BA i Uppsala">
+  <div class="wrap">
+    <div class="chips">
+      <span class="chip"><b>★★★★★</b> 5,0 · 108 omdömen</span>
+      <span class="chip">🎵 <b>31K</b> på TikTok</span>
+    </div>
+    <h1>Uppsalas<br><span>curl & fade</span><br>specialister.</h1>
+    <p>Skin fades, permanent curls och skägg som sitter – på Kungsgatan 66BA. Öppet alla dagar, drop-in välkommen.</p>
+    <div class="cta">
+      <a href="https://wa.me/46729165697?text=Hej!%20Jag%20vill%20boka%20en%20tid." target="_blank" rel="noopener" class="btn btn-gold">💬 Boka via WhatsApp</a>
+      <a href="tel:+46729165697" class="btn btn-ghost">📞 072-916 56 97</a>
+    </div>
+  </div>
+</header>
+<div class="stripe"></div>
+
+<div class="stats">
+  <div class="wrap">
+    <div><strong>5,0 ★</strong><span>108 omdömen på Google</span></div>
+    <div><strong>660K</strong><span>Visningar på vår curl-video</span></div>
+    <div><strong>7 dagar</strong><span>Öppet varje dag</span></div>
+    <div><strong>Drop-in</strong><span>Ingen tid behövs</span></div>
+  </div>
+</div>
+
+<section id="specialiteter">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Specialiteter</div>
+      <h2>Det vi är <span>kända för</span></h2>
+      <p>Från viral curl-perm till en fräsch fade innan matchen – det här är våra favoriter.</p>
+    </div>
+    <div class="spec reveal">
+      <div class="sp star">
+        <div class="ic">🌀</div>
+        <h3>Permanent<br>Curls</h3>
+        <p>Få lockar som håller i 4–6 månader. Vår curl-video har setts över 660 000 gånger på TikTok.</p>
+        <ul><li>Håller 4–6 månader</li><li>Naturlig, mjuk look</li><li>Se resultaten på vår TikTok</li></ul>
+        <span class="viral">🔥 Viral på TikTok</span>
+      </div>
+      <div class="sp"><div class="ic">✂️</div><h3>Skin & Taper Fade</h3><p>Skarpa övergångar från noll – vår vardag, varje dag.</p></div>
+      <div class="sp"><div class="ic">🧔</div><h3>Italian Beard</h3><p>Skäggformning med konturer, rakkniv och olja.</p></div>
+      <div class="sp"><div class="ic">💆</div><h3>Ansiktsbehandling</h3><p>Rengöring och avslappning – perfekt efter klippningen.</p></div>
+      <div class="sp"><div class="ic">🤵</div><h3>Brudgumspaket</h3><p>Klippning, skägg och ansikte inför den stora dagen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="priser" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Priser</div>
+      <h2>Tjänster & <span>priser</span></h2>
+    </div>
+    <div class="services reveal">
+      <div class="svc"><div><h4>Herrklippning</h4><p>Klippning, tvätt & styling</p></div><div class="price">300 kr</div></div>
+      <div class="svc"><div><h4>Skin / Taper Fade</h4><p>Fade från noll</p></div><div class="price">350 kr</div></div>
+      <div class="svc"><div><h4>Klippning + skägg</h4><p>Hela paketet</p></div><div class="price">450 kr</div></div>
+      <div class="svc"><div><h4>Skäggtrim</h4><p>Formning, konturer & rakkniv</p></div><div class="price">200 kr</div></div>
+      <div class="svc"><div><h4>Permanent Curls</h4><p>Håller 4–6 månader</p></div><div class="price">fr. 900 kr</div></div>
+      <div class="svc"><div><h4>Ansiktsbehandling</h4><p>Rengöring & avslappning</p></div><div class="price">250 kr</div></div>
+      <div class="svc"><div><h4>Brudgumspaket</h4><p>Klippning, skägg & ansikte</p></div><div class="price">900 kr</div></div>
+      <div class="svc"><div><h4>Barnklippning</h4><p>Upp till 12 år</p></div><div class="price">250 kr</div></div>
+    </div>
+    <p class="note">* Exempelpriser i demon – byts mot salongens riktiga priser.</p>
+  </div>
+</section>
+
+<section class="lang">
+  <div class="wrap reveal">
+    <div>
+      <div class="eyebrow">Vi pratar ditt språk</div>
+      <h2>Säg exakt hur <span>du vill ha det.</span></h2>
+      <p style="color:var(--muted)">Det är lättare att få rätt frisyr när du kan förklara på ditt eget språk.</p>
+      <blockquote>بیا پیش ما، به زبان خودت بگو چه مدلی می‌خواهی</blockquote>
+      <small>”Kom till oss och berätta på ditt eget språk vilken stil du vill ha.”</small>
+    </div>
+    <div class="langs">
+      <span>🇸🇪 Svenska</span><span>🇬🇧 English</span><span class="fa">دری / فارسی</span>
+    </div>
+  </div>
+</section>
+
+<section id="galleri">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Galleri</div>
+      <h2>Vårt <span>arbete</span></h2>
+    </div>
+    <div class="gallery reveal">
+      <img class="tall" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RsV8JH5srITmKNvghjjoX9ik99P7TWwmwS4bBlnu0G7CEZ_L8RKosSFguILEEfH-65klJWJ4IIspzM8joSNtoOaVVd1mbI69YtZK4x8I1PpHBWZVudjeJ5knBvK0JvtJNaORRu-HDRJz8=w800" alt="Fade-klippning" loading="lazy">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9StE87QTmATxYzHPGLPLCFeEsyIWe01Q4O2Nx8ydEsgDRCFuaCgQKcn_rtytOkv8iXn6hrncR7JQaQaCJ53ndISyy8oLD3kA5KSmQKsmguhmdp5uoKwBYyk4qe6aDTKnzOHCim5OifovEV_=w800" alt="Salongen" loading="lazy">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qi6Vl-UQxmtwdrrHs6aCSaXeSeVa0QBLp4jMfCx0cwQBdLS8uJyHjgKK4IEY7wCW9wizEhVoSr4CrzwWj4DLtuFnvafXqQuDxZ817ChCjFe1t16crcfG8CD3QzAUs-MPrJtzS6n_-4yqru=w800" alt="Salongen" loading="lazy">
+      <img class="tall" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tb3BRnzxe_ax0a8-lguB9_7F7saLo1Zl2QkwN9yc0oISrEUOD7o3FWNhSl-lRsqKNQFinslYL-fENdS1fSqSoYn_JqgjGOL9Vthml3NWHFSwVrLuegRZ8D-fjPjDKUzdu7S1pS=w800" alt="Klippning" loading="lazy">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TCxD2hzOa4nm-BIumC9wCnCSp2wHFIz94uwN4EM22JItXoCbdNlXyw0oc-VUQdwNvAlBrDQx519g6bPl0ibIaCPvC7iR2HfoI6pJeUW_bwJ3TOavmZat2wulMS5tMDuffwxLBxgMletWVW=w800" alt="Barberare i arbete" loading="lazy">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R09qeerKZdKvxMUTOaC-XG6yawFMsKI7t176nlbaVfZvv-zEuj8ESsbfjXKE7Cf58TyC3okn_kiXY-IFymZYniDYb21JFlBOa0M0sjctj-YDVjbz-qjhIO4O1e_2rwmAyl0XIEVWblcuV_=w800" alt="Nöjd kund" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="social" style="padding-top:0">
+  <div class="wrap reveal">
+    <div class="eyebrow">Följ oss</div>
+    <h2>Se mer på <span>TikTok</span></h2>
+    <div class="tt">
+      <div><div class="n">31K</div><div class="l">Följare</div></div><div class="sep"></div>
+      <div><div class="n">124K</div><div class="l">Likes</div></div><div class="sep"></div>
+      <div><div class="n">660K</div><div class="l">Visningar · curl-video</div></div>
+    </div>
+    <div class="socials">
+      <a class="btn btn-gold" href="https://www.tiktok.com/@my.choice_uppsala66" target="_blank" rel="noopener">🎵 TikTok</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/my_choice_barber/" target="_blank" rel="noopener">📸 Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section id="omdomen" style="background:var(--bg2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Omdömen</div>
+      <h2>Vad kunderna <span>säger</span></h2>
+    </div>
+    <div class="reviews reveal">
+      <div class="rev"><div class="s">★★★★★</div><p>”Riktigt grym upplevelse från början till slut! Man känner sig verkligen välkommen direkt när man kommer in.”</p><cite>— Sayed M., Google</cite></div>
+      <div class="rev"><div class="s">★★★★★</div><p>”Riktigt professionella och väldigt prisvärd klippning. De kunde passa in mig mitt i eftermiddagsrushen med drop-in.”</p><cite>— M.C, Local Guide på Google</cite></div>
+      <div class="rev"><div class="s">★★★★★</div><p>”Jag har varit på många salonger, men till slut hittade jag My Choice Barber – och sedan dess kommer jag alltid hit.”</p><cite>— Blue Ocean, Local Guide på Google</cite></div>
+    </div>
+  </div>
+</section>
+
+<section id="hitta">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Besök oss</div>
+      <h2>Hitta <span>hit</span></h2>
+      <p>Kungsgatan 66BA – några minuter från Centralstationen. Leta efter den blå skylten.</p>
+    </div>
+    <div class="visit reveal">
+      <div class="info">
+        <div class="blk"><h3>Adress</h3><p>Kungsgatan 66BA<br>753 41 Uppsala</p></div>
+        <div class="blk"><h3>Telefon & WhatsApp</h3><p><a href="tel:+46729165697">072-916 56 97</a></p></div>
+        <div class="blk" style="margin:0"><h3>Öppettider</h3>
+          <table class="hours" id="hours">
+            <tr data-d="1"><td>Måndag</td><td>10–20</td></tr>
+            <tr data-d="2"><td>Tisdag</td><td>10–20</td></tr>
+            <tr data-d="3"><td>Onsdag</td><td>10–20</td></tr>
+            <tr data-d="4"><td>Torsdag</td><td>10–20</td></tr>
+            <tr data-d="5"><td>Fredag</td><td>10–20</td></tr>
+            <tr data-d="6"><td>Lördag</td><td>10–18</td></tr>
+            <tr data-d="0"><td>Söndag</td><td>10–18</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="map"><iframe loading="lazy" title="Karta till My Choice Barber" src="https://maps.google.com/maps?q=My%20Choice%20Barber%2C%20Kungsgatan%2066BA%2C%20Uppsala&z=16&hl=sv&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<div class="stripe"></div>
+<section class="final">
+  <div class="wrap reveal">
+    <h2>Dags för en <span>ny look?</span></h2>
+    <p>Skicka ett WhatsApp så fixar vi en tid – eller kom förbi direkt.</p>
+    <a href="https://wa.me/46729165697?text=Hej!%20Jag%20vill%20boka%20en%20tid." target="_blank" rel="noopener" class="btn btn-gold">💬 Boka via WhatsApp</a>
+    <a href="tel:+46729165697" class="btn btn-ghost">📞 Ring 072-916 56 97</a>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© 2026 My Choice Barber Uppsala AB · Kungsgatan 66BA, Uppsala</span><span>Öppet alla dagar</span></div></footer>
+<div class="mbar"><a href="https://wa.me/46729165697?text=Hej!%20Jag%20vill%20boka%20en%20tid." target="_blank" rel="noopener" class="btn wa">💬 WhatsApp</a><a href="tel:+46729165697" class="btn btn-gold">📞 Ring</a></div>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>40),{passive:true});
+document.querySelector('#hours tr[data-d="'+new Date().getDay()+'"]')?.classList.add('today');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
