@@ -237,9 +237,10 @@ footer b{font:400 1.5rem "DM Serif Display",serif;color:#fff;display:block}
  const h=+p.find(x=>x.type==='hour').value+(+p.find(x=>x.type==='minute').value)/60;
  const st=document.getElementById('status'),t=st.querySelector('span');
  if(wd!=null){const [o,c]=H[wd];const li=document.querySelector('#hours li[data-d="'+wd+'"]');li&&li.classList.add('today');
-  if(h>=o&&h<c){t.textContent='Öppet nu · stänger '+c+':00'}else{st.classList.add('closed');t.textContent=h<o?'Öppnar idag '+String(o).padStart(2,'0')+':00':'Stängt nu · välkommen imorgon'}}})();
+  const T=x=>(window.tl?window.tl(x):x);window.onLang=function(){if(h>=o&&h<c){t.textContent=T('Öppet nu · stänger')+' '+c+':00'}else{st.classList.add('closed');t.textContent=h<o?T('Öppnar idag')+' '+String(o).padStart(2,'0')+':00':T('Stängt nu · välkommen imorgon')}};window.onLang()}})();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach((e,i)=>{e.style.transitionDelay=(i%4)*60+'ms';io.observe(e)});
 </script>
+<script src="i18n.js"></script><script src="../lang.js"></script>
 </body>
 </html>
