@@ -29,9 +29,15 @@ const nodes=[];
 const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>{const p=n.parentElement;if(!p||/^(SCRIPT|STYLE)$/.test(p.tagName)||p.closest('svg,.tl-sw'))return NodeFilter.FILTER_REJECT;return n.nodeValue.trim()?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT}});
 while(w.nextNode())nodes.push(w.currentNode);
 nodes.forEach(n=>n._sv=n.nodeValue);
+// prices follow the language: SV = kronor, EN = US dollars, EL = euro (approximate, rounded to "nice" prices)
+const CUR={en:{r:.095,f:v=>'$'+v.toLocaleString('en-US')},el:{r:.087,f:v=>v.toLocaleString('el-GR')+' €'}};
+const PRICE=/(\d{1,3}(?:[  ,.]\d{3})+|\d+)\s?(?::-|kr\.?|SEK|kronor)(?![A-Za-zÅÄÖåäö])/g;
+function nice(v){if(v<=0)return 0;if(v<50)return Math.round(v);if(v<1000)return Math.round(v/5)*5;return Math.round(v/10)*10}
+function money(str,l){const c=CUR[l];if(!c)return str;return str.replace(PRICE,(m,n)=>c.f(nice(parseInt(n.replace(/[^\d]/g,''),10)*c.r)))}
+window.tahMoney=money;
 function apply(l){
   lang=l;const d=dict(l);
-  nodes.forEach(n=>{const o=n._sv,t=o.trim();n.nodeValue=(l==='sv'||!d[t])?o:o.replace(t,d[t])});
+  nodes.forEach(n=>{const o=n._sv,t=o.trim();const v=(l==='sv'||!d[t])?o:o.replace(t,d[t]);n.nodeValue=l==='sv'?v:money(v,l)});
   document.documentElement.lang=l;
   document.querySelectorAll('.tl-sw button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
   try{localStorage.setItem('tahLang',l);const u=new URL(location.href);u.searchParams.set('lang',l);history.replaceState(null,'',u)}catch(e){}
