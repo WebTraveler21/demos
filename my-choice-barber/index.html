@@ -136,12 +136,25 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @media(max-width:700px){.mbar{display:flex;gap:8px;position:fixed;bottom:12px;left:12px;right:12px;z-index:60}.mbar .btn{flex:1;padding:14px 10px;box-shadow:0 10px 30px rgba(0,0,0,.6)}.mbar .wa{background:#25d366;color:#08240f}footer{padding-bottom:90px}}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
 .reveal.in{opacity:1;transform:none}
+
+/* MOBILE FIX */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(max-width:600px){
+html{font-size:14px}
+.demobar{font-size:11px;padding:6px 10px;line-height:1.35}
+.demobar .dm{display:none}
+nav{top:40px}
+.hero h1{font-size:2.5rem}
+h2{font-size:1.9rem}
+.final h2{font-size:2.2rem}
+.hero p{font-size:1rem}
+}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute"><symbol id="beard" viewBox="0 0 64 64"><path fill="#111" d="M14 22c0-11 8-18 18-18s18 7 18 18v4H14z"/><rect x="12" y="26" width="17" height="8" rx="3" fill="#111"/><rect x="35" y="26" width="17" height="8" rx="3" fill="#111"/><rect x="28" y="28" width="8" height="3" fill="#111"/><path fill="#111" d="M14 36c2 14 9 24 18 24s16-10 18-24c-4 4-9 5-12 3-2 2-10 2-12 0-3 2-8 1-12-3z"/><path fill="#fff" d="M26 44c3 2 9 2 12 0-2 4-10 4-12 0z"/></symbol></svg>
 
-<div class="demobar">✨ Förslag på ny hemsida för My Choice Barber – gjord av Taher Jrad. Gillar ni den? <a href="https://wa.me/306988214186">WhatsApp +30 698 821 4186</a> · <a href="mailto:taxirxania21@gmail.com">taxirxania21@gmail.com</a></div>
+<div class="demobar">✨ Förslag på ny hemsida för My Choice Barber – gjord av Taher Jrad. Gillar ni den? <a href="https://wa.me/306988214186">WhatsApp +30 698 821 4186</a><span class="dm"> · <a href="mailto:taxirxania21@gmail.com">taxirxania21@gmail.com</a></span></div>
 
 <nav id="nav">
   <div class="wrap">
