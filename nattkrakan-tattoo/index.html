@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nattkråkan Tattoo – tatueringsstudio i Uppsala (exempelsida)</title>
+<meta name="description" content="Fineline, blackwork, traditional och realism. Privat studio, egen design – exempelsida.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* Brief: mood = mörkt, hantverk, rått · colours = ink black #0b0a0a, bone #ece4d6, blood red #c8102e, smoke #8a8178
+   type = Pirata One (gothic display, like a flash sheet) + Archivo · signature = flash sheet with red stamped price tags + crow mark
+   wow = red ink line that draws itself under the hero title · primary action = Ring & boka */
+:root{--ink:#0b0a0a;--ink2:#151313;--ink3:#1f1c1b;--bone:#ece4d6;--bone2:#cfc5b4;--red:#c8102e;--red2:#e0273f;--smoke:#8a8178;--line:rgba(236,228,214,.12);--ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth;background:var(--ink)}
+body{background:var(--ink);color:var(--bone);font:400 1.0625rem/1.65 Archivo,system-ui,sans-serif}
+a{color:inherit}img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Pirata One",serif;font-weight:400;line-height:1;letter-spacing:.01em}
+h2{font-size:clamp(2.6rem,6vw,4.6rem);margin-bottom:16px;text-wrap:balance}
+h2 em,h1 em{font-style:normal;color:var(--red2)}
+.kick{font:700 .8rem "Archivo Narrow";letter-spacing:.28em;text-transform:uppercase;color:var(--red2);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.kick::before{content:"";width:28px;height:2px;background:var(--red)}
+p.lead{color:var(--bone2);max-width:58ch;text-wrap:pretty}
+.btn{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 26px;border-radius:4px;font:700 1rem "Archivo Narrow";letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:transform .15s var(--ease),background .2s,color .2s}
+.btn:active{transform:scale(.97)}
+.btn.rd{background:var(--red);color:#fff}.btn.ln{border:1.5px solid var(--bone);color:var(--bone)}
+@media(hover:hover){.btn.rd:hover{background:var(--red2)}.btn.ln:hover{background:var(--bone);color:var(--ink)}}
+section{padding:110px 0;position:relative}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+.demobar{position:fixed;inset:0 0 auto 0;z-index:70;background:var(--red);color:#fff;font-size:.85rem;text-align:center;padding:8px 14px;line-height:1.4}
+.demobar a{font-weight:700;text-decoration:underline}
+
+nav{position:absolute;top:38px;left:0;right:0;z-index:20}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:80px}
+.logo{display:flex;align-items:center;gap:10px;font:400 1.9rem "Pirata One";text-decoration:none}
+.logo svg{width:34px;height:34px;fill:var(--bone)}
+nav ul{display:flex;gap:30px;list-style:none;font:700 .85rem "Archivo Narrow";letter-spacing:.2em;text-transform:uppercase}
+nav ul a{text-decoration:none;opacity:.85}@media(hover:hover){nav ul a:hover{opacity:1;color:var(--red2)}}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;padding:180px 0 90px;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.15) brightness(.55);transform:scale(1.06);animation:slow 22s var(--ease) forwards}
+@keyframes slow{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,10,10,.55),rgba(11,10,10,.1) 35%,rgba(11,10,10,.92) 88%),radial-gradient(ellipse at 20% 80%,rgba(200,16,46,.18),transparent 60%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.stamp{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--red);color:var(--red2);font:700 .78rem "Archivo Narrow";letter-spacing:.2em;text-transform:uppercase;padding:7px 12px;border-radius:3px;margin-bottom:22px;transform:rotate(-2deg)}
+.hero h1{font-size:clamp(3.4rem,10vw,8.4rem);max-width:11ch}
+.ink{display:block;width:min(520px,80%);height:30px;margin:6px 0 22px}
+.ink path{fill:none;stroke:var(--red);stroke-width:4;stroke-linecap:round;stroke-dasharray:900;stroke-dashoffset:900;animation:draw 2.4s .6s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero p{max-width:48ch;color:var(--bone2);font-size:1.12rem;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.age{position:absolute;right:24px;bottom:96px;z-index:2;width:92px;height:92px;border-radius:50%;border:2px dashed var(--red);display:grid;place-items:center;text-align:center;font:700 .7rem/1.2 "Archivo Narrow";letter-spacing:.14em;text-transform:uppercase;color:var(--red2);transform:rotate(10deg)}
+.age b{display:block;font:400 2rem/1 "Pirata One";color:var(--bone);letter-spacing:0}
+
+/* styles */
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.sc{position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:4px;background:var(--ink2)}
+.sc img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1);transition:transform .7s var(--ease),filter .5s}
+.sc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(11,10,10,.92))}
+.sc div{position:absolute;left:18px;right:18px;bottom:16px;z-index:2}
+.sc h3{font-size:2rem;margin-bottom:2px}.sc p{font-size:.9rem;color:var(--bone2)}
+@media(hover:hover){.sc:hover img{transform:scale(1.05);filter:grayscale(.2) contrast(1.1)}}
+
+/* flash */
+#flash{background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fhead{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.fl{position:relative;background:var(--ink);border:1px solid var(--line);padding:10px;border-radius:4px}
+.fl img{aspect-ratio:1;object-fit:cover;width:100%;filter:grayscale(1) contrast(1.15)}
+.fl .tag{position:absolute;top:18px;right:18px;background:var(--red);color:#fff;font:700 .85rem "Archivo Narrow";letter-spacing:.08em;padding:6px 10px;transform:rotate(4deg);box-shadow:0 6px 16px rgba(0,0,0,.4)}
+.fl figcaption{display:flex;justify-content:space-between;padding:12px 4px 2px;font:600 .9rem Archivo;color:var(--bone2)}
+.fl figcaption span:last-child{color:var(--smoke)}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;border-top:1px solid var(--line)}
+.step{padding:28px 24px 0 0}
+.step b{display:block;font:400 3.4rem/1 "Pirata One";color:var(--red2);margin-bottom:10px}
+.step h3{font:700 1.15rem Archivo;margin-bottom:6px;letter-spacing:0}
+.step p{color:var(--bone2);font-size:.95rem}
+
+/* prices */
+.pr{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.plist{list-style:none;border-top:1px solid var(--line)}
+.plist li{display:flex;align-items:baseline;gap:12px;padding:18px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+.plist li i{flex:1;border-bottom:1.5px dotted rgba(236,228,214,.25);transform:translateY(-5px)}
+.plist li b{font:700 1.2rem Archivo;color:var(--bone);font-variant-numeric:tabular-nums}
+.pnote{margin-top:18px;color:var(--smoke);font-size:.9rem}
+.primg{position:relative;border-radius:4px;overflow:hidden}
+.primg img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(.85) contrast(1.15) brightness(.85)}
+.primg span{position:absolute;left:18px;bottom:18px;background:var(--ink);border-left:3px solid var(--red);padding:12px 16px;font-size:.92rem;max-width:80%}
+
+/* artists */
+.arts{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+.art{display:grid;grid-template-columns:180px 1fr;gap:22px;align-items:center;background:var(--ink2);border:1px solid var(--line);border-radius:4px;padding:16px}
+.art img{width:180px;height:220px;object-fit:cover;filter:grayscale(1) contrast(1.1);border-radius:3px}
+.art h3{font-size:2.4rem}.art .k{font:700 .75rem "Archivo Narrow";letter-spacing:.2em;text-transform:uppercase;color:var(--red2);display:block;margin:2px 0 10px}
+.art p{color:var(--bone2);font-size:.95rem}
+
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.rev{border:1px solid var(--line);border-radius:4px;padding:26px;background:var(--ink2)}
+.rev .st{color:var(--red2);letter-spacing:.2em;margin-bottom:10px}
+.rev p{font-size:1.02rem;margin-bottom:14px}.rev small{color:var(--smoke)}
+
+/* faq */
+.faq{max-width:820px}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:20px 0;font:600 1.08rem Archivo;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 1.6rem/1 "Pirata One";color:var(--red2)}
+details[open] summary::after{content:"–"}
+details p{padding:0 0 20px;color:var(--bone2);max-width:68ch}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.visit img{border-radius:4px;aspect-ratio:4/3;object-fit:cover;width:100%;filter:grayscale(1) contrast(1.15) brightness(.8)}
+#hours{list-style:none;margin:20px 0 26px;max-width:420px}
+#hours li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);color:var(--bone2)}
+#hours li.today{color:var(--bone);font-weight:700}
+#hours li.today span:first-child::after{content:" •";color:var(--red2)}
+
+footer{border-top:1px solid var(--line);padding:34px 0 40px;color:var(--smoke);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer b{color:var(--bone);font:400 1.4rem "Pirata One";display:block}
+
+.mcta{display:none}
+@media(max-width:900px){
+  .sgrid{grid-template-columns:1fr 1fr}.fgrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr;row-gap:10px}
+  .pr,.visit,.arts{grid-template-columns:1fr;gap:36px}.revs{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  html{font-size:14.5px}section{padding:72px 0}
+  nav ul{display:none}nav{top:30px}
+  .hero{padding:150px 0 110px}.hero h1{font-size:3.6rem}
+  .age{width:70px;height:70px;right:16px;bottom:auto;top:120px}.age b{font-size:1.5rem}
+  .fgrid{gap:10px}.fl{padding:6px}.fl figcaption{font-size:.8rem;flex-direction:column}
+  .steps{grid-template-columns:1fr}.step{padding:22px 0 0}
+  .art{grid-template-columns:110px 1fr;gap:14px}.art img{width:110px;height:140px}.art h3{font-size:1.9rem}
+  .mcta{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:12px;right:12px;bottom:12px;z-index:60}
+  .mcta a{height:54px;border-radius:4px;display:flex;align-items:center;justify-content:center;font:700 1rem "Archivo Narrow";letter-spacing:.1em;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+  .mcta a:first-child{background:var(--red);color:#fff}.mcta a:last-child{background:var(--bone);color:var(--ink)}
+  footer{padding-bottom:96px}
+  .demobar{font-size:11px;padding:6px 10px;line-height:1.35}.demobar .dm{display:none}
+}
+@media(prefers-reduced-motion:reduce){.hero>img,.ink path{animation:none;transform:none;stroke-dashoffset:0}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demobar">✨ Exempelsida av Tah Websites – påhittat företag. Vill du ha en egen? <a href="https://wa.me/306988214186">WhatsApp +30 698 821 4186</a><span class="dm"> · <a href="mailto:taxirxania21@gmail.com">taxirxania21@gmail.com</a></span></div>
+
+<nav><div class="wrap">
+  <a class="logo" href="#"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M6 40c6-2 12-7 16-13 3-5 7-10 14-11l6-6 2 5c4 0 8 2 10 5l-7 1c2 4 2 9-1 14l10 9-13-3c-5 4-12 6-19 5l-6 8-1-8c-5-1-9-3-11-6z"/><circle cx="44" cy="17" r="1.6" fill="#0b0a0a"/></svg>Nattkråkan</a>
+  <ul><li><a href="#stilar">Stilar</a></li><li><a href="#flash">Flash</a></li><li><a href="#priser">Priser</a></li><li><a href="#boka">Boka</a></li></ul>
+</div></nav>
+
+<header class="hero">
+  <img src="img/hero.jpg" alt="Tatuerare som arbetar i studion">
+  <div class="wrap">
+    <div class="stamp">★ 4,9 · Exempelbetyg</div>
+    <h1>Bläck som <em>håller.</em></h1>
+    <svg class="ink" viewBox="0 0 520 30" aria-hidden="true"><path d="M4 18C60 6 110 26 170 16S280 4 340 15s110 10 176-6"/></svg>
+    <p>Privat tatueringsstudio i Uppsala. Fineline, blackwork, traditional och realism – alltid egen design, ritad för just dig.</p>
+    <div class="cta"><a class="btn rd" href="tel:+46701740683">Ring &amp; boka</a><a class="btn ln" href="#flash">Se flash</a></div>
+  </div>
+  <div class="age"><div><b>18+</b>Legitimation</div></div>
+</header>
+
+<section id="stilar"><div class="wrap">
+  <div class="reveal"><span class="kick">Stilar</span><h2>Fyra stilar. <em>En hand.</em></h2>
+  <p class="lead">Vi ritar allt från grunden – ingen kopiering från nätet. Ta med din idé, så gör vi den till din.</p></div>
+  <div class="sgrid">
+    <div class="sc reveal"><img src="img/fineline.jpg" alt="Liten fineline-tatuering på underarm" loading="lazy"><div><h3>Fineline</h3><p>Tunna linjer, små motiv</p></div></div>
+    <div class="sc reveal"><img src="img/skull.jpg" alt="Blackwork-dödskalle på underarm" loading="lazy"><div><h3>Blackwork</h3><p>Tungt svart, skarpa kontraster</p></div></div>
+    <div class="sc reveal"><img src="img/snake.jpg" alt="Orm och ros på arm" loading="lazy"><div><h3>Traditional</h3><p>Djärva linjer som åldras fint</p></div></div>
+    <div class="sc reveal"><img src="img/portrait.jpg" alt="Illustrativ porträtt-tatuering på överarm" loading="lazy"><div><h3>Realism</h3><p>Porträtt och detaljer</p></div></div>
+  </div>
+</div></section>
+
+<section id="flash"><div class="wrap">
+  <div class="fhead reveal"><div><span class="kick">Flash</span><h2>Färdiga motiv. <em>Fast pris.</em></h2></div>
+  <p class="lead" style="max-width:40ch">Flash-dag första lördagen varje månad – först till kvarn, ingen bokning.</p></div>
+  <div class="fgrid">
+    <figure class="fl reveal"><img src="img/dagger.jpg" alt="Dolk i fineline" loading="lazy"><span class="tag">900:-</span><figcaption><span>Dolken</span><span>ca 8 cm</span></figcaption></figure>
+    <figure class="fl reveal"><img src="img/geometric.jpg" alt="Geometriskt mönster" loading="lazy"><span class="tag">1 400:-</span><figcaption><span>Hexagon</span><span>ca 12 cm</span></figcaption></figure>
+    <figure class="fl reveal"><img src="img/fineline.jpg" alt="Kaktus i fineline" loading="lazy"><span class="tag">800:-</span><figcaption><span>Kaktusen</span><span>ca 4 cm</span></figcaption></figure>
+    <figure class="fl reveal"><img src="img/skull.jpg" alt="Dödskalle i blackwork" loading="lazy"><span class="tag">1 800:-</span><figcaption><span>Skallen</span><span>ca 15 cm</span></figcaption></figure>
+    <figure class="fl reveal"><img src="img/snake.jpg" alt="Orm med ros" loading="lazy"><span class="tag">2 200:-</span><figcaption><span>Ormen</span><span>ca 18 cm</span></figcaption></figure>
+    <figure class="fl reveal"><img src="img/work.jpg" alt="Drake under arbete" loading="lazy"><span class="tag">2 600:-</span><figcaption><span>Draken</span><span>ca 20 cm</span></figcaption></figure>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <div class="reveal"><span class="kick">Så går det till</span><h2>Från idé <em>till hud.</em></h2></div>
+  <div class="steps">
+    <div class="step reveal"><b>I</b><h3>Konsultation</h3><p>15 minuter, gratis. Vi pratar idé, storlek och placering.</p></div>
+    <div class="step reveal"><b>II</b><h3>Skiss</h3><p>Vi ritar ditt motiv och justerar tills det sitter.</p></div>
+    <div class="step reveal"><b>III</b><h3>Session</h3><p>Sterilt, lugnt och i din takt. Pauser när du vill.</p></div>
+    <div class="step reveal"><b>IV</b><h3>Läkning</h3><p>Du får eftervård med dig hem – och en gratis touch-up.</p></div>
+  </div>
+</div></section>
+
+<section id="priser" style="background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap pr">
+  <div class="reveal">
+    <span class="kick">Priser</span><h2>Ärliga <em>priser.</em></h2>
+    <ul class="plist">
+      <li><span>Minsta pris</span><i></i><b>800:-</b></li>
+      <li><span>Liten (upp till 5 cm)</span><i></i><b>från 900:-</b></li>
+      <li><span>Timpris</span><i></i><b>1 200:-</b></li>
+      <li><span>Heldag (ca 6 timmar)</span><i></i><b>6 500:-</b></li>
+      <li><span>Touch-up inom 3 månader</span><i></i><b>0:-</b></li>
+    </ul>
+    <p class="pnote">Handpenning 500 kr vid bokning – dras av från priset. Exempelpriser.</p>
+  </div>
+  <div class="primg reveal"><img src="img/work.jpg" alt="Tatuerare som arbetar på en drake" loading="lazy"><span>Alla nålar är engångs. Allt steriliseras.</span></div>
+</div></section>
+
+<section id="artister"><div class="wrap">
+  <div class="reveal"><span class="kick">Artister</span><h2>Två händer. <em>Två stilar.</em></h2></div>
+  <div class="arts">
+    <div class="art reveal"><img src="img/vera.jpg" alt="Vera tatuerar en kund" loading="lazy"><div><h3>Vera</h3><span class="k">Fineline · Blommor</span><p>Små, tunna motiv som ser ut som teckningar. Älskar botaniskt och text.</p></div></div>
+    <div class="art reveal"><img src="img/nils.jpg" alt="Nils tatuerar en kund" loading="lazy"><div><h3>Nils</h3><span class="k">Blackwork · Traditional</span><p>Tungt svart och klassiska motiv – ormar, dolkar och skallar.</p></div></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="reveal"><span class="kick">Exempel på omdömen</span><h2>Vad kunderna <em>säger.</em></h2></div>
+  <div class="revs">
+    <div class="rev reveal"><div class="st">★★★★★</div><p>”Vera ritade exakt det jag hade i huvudet. Läkte perfekt.”</p><small>Elin (exempel)</small></div>
+    <div class="rev reveal"><div class="st">★★★★★</div><p>”Lugn stämning, inget stress. Min första tatuering och jag var inte nervös alls.”</p><small>Jonas (exempel)</small></div>
+    <div class="rev reveal"><div class="st">★★★★★</div><p>”Nils blackwork är sjukt skarp. Bokar nästa redan.”</p><small>Amir (exempel)</small></div>
+  </div>
+</div></section>
+
+<section id="fragor" style="padding-top:0"><div class="wrap faq">
+  <div class="reveal"><span class="kick">Frågor</span><h2>Bra att <em>veta.</em></h2></div>
+  <details class="reveal"><summary>Gör det ont?</summary><p>Lite – mest som en kraftig klia. Det beror på var på kroppen. Vi tar pauser när du behöver.</p></details>
+  <details class="reveal"><summary>Hur förbereder jag mig?</summary><p>Sov ordentligt, ät innan och drick vatten. Ingen alkohol dagen innan.</p></details>
+  <details class="reveal"><summary>Hur sköter jag tatueringen efteråt?</summary><p>Tvätta försiktigt, smörj tunt två gånger om dagen och undvik sol och bad i två veckor.</p></details>
+  <details class="reveal"><summary>Finns det en åldersgräns?</summary><p>Ja, 18 år. Ta med legitimation till sessionen.</p></details>
+</div></section>
+
+<section id="boka" style="background:var(--ink2);border-top:1px solid var(--line)"><div class="wrap visit">
+  <div class="reveal"><img src="img/hero.jpg" alt="Studion" loading="lazy"></div>
+  <div class="reveal">
+    <span class="kick">Boka</span><h2>Kom förbi <em>på kaffe.</em></h2>
+    <ul id="hours">
+      <li data-d="1"><span>Måndag</span><span>Stängt</span></li>
+      <li data-d="2"><span>Tisdag</span><span>11–19</span></li>
+      <li data-d="3"><span>Onsdag</span><span>11–19</span></li>
+      <li data-d="4"><span>Torsdag</span><span>11–19</span></li>
+      <li data-d="5"><span>Fredag</span><span>11–19</span></li>
+      <li data-d="6"><span>Lördag</span><span>11–16</span></li>
+      <li data-d="0"><span>Söndag</span><span>Stängt</span></li>
+    </ul>
+    <p class="lead" style="margin-bottom:24px">Exempelgatan 7, 753 00 Uppsala · Endast bokade tider</p>
+    <div class="cta"><a class="btn rd" href="tel:+46701740683">Ring 070-174 06 83</a><a class="btn ln" href="https://www.google.com/maps/search/?api=1&amp;query=Uppsala" target="_blank" rel="noopener">Vägbeskrivning</a></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><b>Nattkråkan Tattoo</b>Exempelgatan 7 · påhittad exempelstudio</div>
+  <div>Tis–fre 11–19 · Lör 11–16 · Sön–mån stängt</div>
+</div></footer>
+
+<div class="mcta"><a href="tel:+46701740683">📞 Ring</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Uppsala" target="_blank" rel="noopener">📍 Hitta hit</a></div>
+
+<script>
+(function(){const p=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',weekday:'short'}).formatToParts(new Date());
+ const wd={'sön':0,'mån':1,'tis':2,'ons':3,'tors':4,'fre':5,'lör':6}[(p.find(x=>x.type==='weekday').value||'').replace('.','')];
+ const li=document.querySelector('#hours li[data-d="'+wd+'"]');li&&li.classList.add('today')})();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((e,i)=>{e.style.transitionDelay=(i%4)*60+'ms';io.observe(e)});
+</script>
+<script src="i18n.js"></script><script src="../lang.js"></script>
+</body>
+</html>
