@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ängsröda gård – gårdsburgare, fika & gårdsbutik (exempelsida)</title>
+<meta name="description" content="Burgare från gårdens egna djur, hembakat fika, gårdsbutik och loppis mitt i Upplands landskap. Ängsröda gård – exempelsida.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* Brief: mood = rustik, varm, lantlig idyll · colours from the place: falu red #9e2b1e, meadow green #4f6b2e, cream walls #f5efe2
+   type = Fraunces (display) + Work Sans (text) + Caveat (chalk) · signature = the real chalkboard burger menu
+   wow = chalkboard menu section · primary action = Hitta hit / Ring */
+:root{--red:#9e2b1e;--red2:#7d2016;--green:#4f6b2e;--cream:#f5efe2;--paper:#fbf7ef;--ink:#2a1f17;--mute:#6f6152;--chalk:#26302b;--line:#e4d9c4;
+ --ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 "Work Sans",system-ui,sans-serif}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.05;text-wrap:balance}
+h2{font-size:clamp(2rem,4.6vw,3.4rem);margin-bottom:16px}
+h2 em,h1 em{font-style:italic;font-weight:500;color:var(--red)}
+.kick{font:600 .78rem "Work Sans";letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:12px;display:block}
+p.lead{color:var(--mute);max-width:58ch;text-wrap:pretty}
+.btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 24px;border-radius:999px;font:600 1rem "Work Sans";text-decoration:none;transition:transform .15s var(--ease),background .2s}
+.btn:active{transform:scale(.97)}
+.btn.red{background:var(--red);color:#fff}.btn.line{border:1.5px solid currentColor}
+@media(hover:hover){.btn.red:hover{background:var(--red2)}}
+
+/* demo bar */
+.demobar{position:fixed;inset:0 0 auto 0;z-index:70;background:var(--green);color:#fff;font-size:.85rem;text-align:center;padding:8px 14px;line-height:1.4}
+.demobar a{font-weight:700;text-decoration:underline}
+
+/* nav */
+nav{position:absolute;top:38px;left:0;right:0;z-index:20;color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font:700 1.35rem Fraunces,serif;letter-spacing:-.01em;text-decoration:none}
+.logo small{display:block;font:500 .7rem "Work Sans";letter-spacing:.24em;text-transform:uppercase;opacity:.85}
+nav ul{display:flex;gap:28px;list-style:none;font-weight:500}
+nav ul a{text-decoration:none;opacity:.9}
+@media(hover:hover){nav ul a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;transform:scale(1.06);animation:hz 1.6s var(--ease) forwards}
+@keyframes hz{to{transform:scale(1)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,14,8,.62),rgba(20,14,8,.1) 60%,transparent),linear-gradient(180deg,rgba(20,14,8,.45) 0%,rgba(20,14,8,0) 30%,rgba(20,14,8,.1) 55%,rgba(20,14,8,.75) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:72px;width:100%}
+.hero h1{font-size:clamp(2.6rem,7vw,5.6rem);max-width:13ch;margin-bottom:20px}
+.hero h1 em{color:#ffd9a0}
+.hero p{max-width:46ch;font-size:1.15rem;opacity:.95;margin-bottom:28px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn.line{color:#fff}
+.rating{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:999px;font-weight:600;font-size:.9rem;margin-bottom:20px}
+.rating b{color:#ffcf5c;letter-spacing:2px}
+
+/* info strip */
+.strip{background:var(--red);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.strip div{padding:24px 20px;border-right:1px solid rgba(255,255,255,.18)}.strip div:last-child{border:0}
+.strip small{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;opacity:.75;margin-bottom:4px}
+.strip b{font:600 1.05rem "Work Sans"}
+.strip a{text-decoration:none}
+
+section{padding:96px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.ph{border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:var(--line)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+@media(hover:hover){.ph:hover img{transform:scale(1.04)}}
+
+/* chalkboard menu (signature) */
+.menu{background:var(--cream)}
+.board{background:radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.06),transparent 60%),var(--chalk);color:#f4f1ea;border-radius:12px;padding:48px 48px 40px;border:14px solid #5a3b25;box-shadow:inset 0 0 60px rgba(0,0,0,.45),0 30px 60px -20px rgba(60,30,10,.45);font-family:Caveat,cursive;position:relative}
+.board h3{font:700 3rem/1 Caveat,cursive;text-align:center;letter-spacing:.02em;margin-bottom:4px}
+.board .sub{text-align:center;font-size:1.5rem;opacity:.8;margin-bottom:28px}
+.row{display:flex;align-items:baseline;gap:12px;font-size:1.75rem;line-height:1.2;padding:10px 0}
+.row .dots{flex:1;border-bottom:2px dotted rgba(244,241,234,.35);transform:translateY(-6px)}
+.row .pr{font-weight:700;color:#ffd9a0;font-variant-numeric:tabular-nums}
+.row small{display:block;font-size:1.25rem;opacity:.75}
+.board .note{font-size:1.3rem;opacity:.7;text-align:center;margin-top:20px}
+.menu .split{align-items:stretch}
+.menu .ph{aspect-ratio:auto;min-height:100%}
+
+/* fika strip */
+.fika{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.fika figure{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:3/4}
+.fika img{width:100%;height:100%;object-fit:cover}
+.fika figcaption{position:absolute;left:16px;bottom:16px;background:var(--paper);padding:6px 14px;border-radius:999px;font-weight:600;font-size:.9rem}
+
+/* shop */
+.shop{background:var(--ink);color:var(--cream)}
+.shop .kick{color:#c9d99a}.shop p.lead{color:#cdbfa8}.shop h2 em{color:#ffb08a}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.tags span{border:1px solid rgba(245,239,226,.3);padding:6px 14px;border-radius:999px;font-size:.92rem}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mosaic .ph{aspect-ratio:1}
+.mosaic .ph:first-child{grid-row:span 2;aspect-ratio:auto}
+
+/* animals */
+.cows{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px}
+.cows .ph{aspect-ratio:3/4;border-radius:20px}
+
+/* reviews */
+.reviews{background:var(--cream)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.rv{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px}
+.rv .st{color:#d9962b;letter-spacing:2px;margin-bottom:12px}
+.rv p{font:500 1.15rem/1.45 Fraunces,serif;margin-bottom:16px}
+.rv span{color:var(--mute);font-size:.9rem}
+.big-rating{display:flex;align-items:center;gap:16px}
+.big-rating b{font:700 4rem/1 Fraunces,serif;color:var(--red)}
+
+/* visit */
+.visit .ph{aspect-ratio:16/11}
+.facts{list-style:none;margin:24px 0 32px;border-top:1px solid var(--line)}
+.facts li{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.facts li b{font-weight:600}
+.tip{background:#fff7e6;border:1px solid #f0d9a8;border-radius:14px;padding:14px 18px;font-size:.95rem;color:#6b4a12;margin-bottom:24px}
+
+footer{background:var(--red2);color:#f3d9cf;padding:40px 0;font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer b{font:700 1.3rem Fraunces,serif;color:#fff;display:block}
+
+/* sticky mobile CTA */
+.mcta{display:none}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  nav ul{display:none}
+  .strip .wrap{grid-template-columns:1fr 1fr}.strip div:nth-child(2){border-right:0}.strip div{border-bottom:1px solid rgba(255,255,255,.18)}
+  .split{grid-template-columns:1fr;gap:32px}
+  .fika{grid-template-columns:1fr 1fr}.fika figure:last-child{display:none}
+  .cows{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr}
+  .board{padding:32px 20px 28px;border-width:10px}.row{font-size:1.45rem}.board h3{font-size:2.4rem}
+  footer{padding-bottom:100px}
+  .hero .wrap{padding-bottom:96px}
+  .mcta{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:12px;right:12px;bottom:12px;z-index:60}
+  .mcta a{height:52px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  .mcta a:first-child{background:var(--red);color:#fff}.mcta a:last-child{background:var(--paper);color:var(--ink)}
+}
+@media(max-width:600px){
+  html{font-size:14.5px}
+  .demobar{font-size:11px;padding:6px 10px;line-height:1.35}.demobar .dm{display:none}
+  nav{top:40px}
+  .hero h1{font-size:2.6rem}.hero p{font-size:1.05rem}
+  h2{font-size:2rem}
+  section{padding:64px 0}
+  .facts li{grid-template-columns:96px 1fr}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demobar">✨ Exempelsida av Tah Websites – påhittat företag. Vill du ha en egen? <a href="https://wa.me/306988214186">WhatsApp +30 698 821 4186</a><span class="dm"> · <a href="mailto:taxirxania21@gmail.com">taxirxania21@gmail.com</a></span></div>
+
+<nav><div class="wrap">
+  <a class="logo" href="#">Ängsröda gård<small>Uppland · sedan 1912</small></a>
+  <ul><li><a href="#mat">Mat & fika</a></li><li><a href="#butik">Gårdsbutik</a></li><li><a href="#djuren">Djuren</a></li><li><a href="#hitta">Hitta hit</a></li></ul>
+</div></nav>
+
+<header class="hero">
+  <img class="bg" src="img/barn.jpg" alt="Röd lada vid ett grönt fält">
+  <div class="wrap">
+    <div class="rating"><b>★★★★★</b> 4,8 · 230 omdömen</div>
+    <h1>Burgare från gården, fika <em>bland korna.</em></h1>
+    <p>Kött från våra egna djur, hembakat fika och en gårdsbutik full av fynd – mitt i Upplands landskap, en kort bilresa från stan.</p>
+    <div class="cta"><a class="btn red" href="#hitta">Hitta hit →</a><a class="btn line" href="tel:+46701740642">Ring 070-174 06 42</a></div>
+  </div>
+</header>
+
+<div class="strip"><div class="wrap">
+  <div><small>Öppet</small><b>Lör–sön 11–16</b></div>
+  <div><small>Adress</small><b>Ängsvägen 1, Uppland</b></div>
+  <div><small>Telefon</small><b><a href="tel:+46701740642">070-174 06 42</a></b></div>
+  <div><small>Hundar</small><b>Välkomna 🐾</b></div>
+</div></div>
+
+<section class="menu" id="mat"><div class="wrap">
+  <div class="split">
+    <div class="reveal">
+      <span class="kick">Från vår egen hage</span>
+      <h2>Gårdens <em>hamburgare.</em></h2>
+      <p class="lead" style="margin-bottom:32px">Köttet kommer från djuren du ser i hagen och grillas på plats. Saftiga, ärliga burgare – värda bilturen bara för det.</p>
+      <div class="board">
+        <h3>Ängsrödas burgare</h3>
+        <div class="sub">kött från gården</div>
+        <div class="row"><div>Gårdens hamburgare<small>gårdens ost, picklad rödlök & aioli</small></div></div>
+        <div class="row"><span>Enkel 100 g</span><span class="dots"></span><span class="pr">145 kr</span></div>
+        <div class="row"><span>Dubbel 200 g</span><span class="dots"></span><span class="pr">185 kr</span></div>
+        <div class="row"><span>Halloumiburgare<small>samma topping</small></span><span class="dots"></span><span class="pr">135 kr</span></div>
+        <div class="row"><span>Barnburgare<small>ost & ketchup</small></span><span class="dots"></span><span class="pr">85 kr</span></div>
+        <div class="note">+ hembakat fika · kaffe · saft</div>
+      </div>
+    </div>
+    <div class="ph reveal"><img src="img/burger.jpg" alt="Hamburgare på träbräda" loading="lazy"></div>
+  </div>
+  <div class="fika">
+    <figure class="reveal"><img src="img/burger2.jpg" alt="Burgare med bacon" loading="lazy"><figcaption>Grillat på plats</figcaption></figure>
+    <figure class="reveal"><img src="img/field.jpg" alt="Rapsfält framför gården" loading="lazy"><figcaption>Rapsfälten i juni</figcaption></figure>
+    <figure class="reveal"><img src="img/barn3.jpg" alt="Ladan vid granen" loading="lazy"><figcaption>Fika vid ladan</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="shop" id="butik"><div class="wrap split">
+  <div class="mosaic reveal">
+    <div class="ph"><img src="img/shop2.jpg" alt="Gårdsbutikens hyllor" loading="lazy"></div>
+    <div class="ph"><img src="img/shop.jpg" alt="Korgar med grönsaker" loading="lazy"></div>
+    <div class="ph"><img src="img/veg.jpg" alt="Nyskördat grönt" loading="lazy"></div>
+  </div>
+  <div class="reveal">
+    <span class="kick">Gårdsbutik & loppis</span>
+    <h2>Fynd, inredning och <em>lantlig charm.</em></h2>
+    <p class="lead">I den gamla ladan hittar du gårdens egna produkter, säsongens grönsaker och en liten loppis. Ta en kopp kaffe och strosa runt i lugn och ro.</p>
+    <div class="tags"><span>Gårdens kött</span><span>Grönsaker</span><span>Loppis</span><span>Presenter</span><span>Hembakat</span></div>
+  </div>
+</div></section>
+
+<section id="djuren"><div class="wrap">
+  <div class="reveal" style="max-width:640px">
+    <span class="kick">Säg hej till djuren</span>
+    <h2>Här hör du <em>korna råma.</em></h2>
+    <p class="lead">Våra kor och kalvar betar runt gården och är vana vid besökare. Ett perfekt utflyktsmål för barnfamiljer – och för alla som vill komma bort från stan en stund.</p>
+  </div>
+  <div class="cows">
+    <div class="ph reveal"><img src="img/cow2.jpg" alt="Kor som vilar i gräset" loading="lazy"></div>
+    <div class="ph reveal"><img src="img/cows.jpg" alt="Kor som betar" loading="lazy"></div>
+    <div class="ph reveal"><img src="img/cows3.jpg" alt="Korna vid hagen" loading="lazy"></div>
+    
+  </div>
+</div></section>
+
+<section class="reviews"><div class="wrap">
+  <div class="big-rating reveal"><b>4,8</b><div><span class="kick" style="margin:0">Exempel på omdömen</span><h2 style="margin:0;font-size:clamp(1.6rem,3vw,2.2rem)">Vad gästerna säger</h2></div></div>
+  <div class="rv-grid">
+    <div class="rv reveal"><div class="st">★★★★★</div><p>”Bästa burgaren vi ätit i år – och barnen fick hälsa på korna.”</p><span>Anna (exempel)</span></div>
+    <div class="rv reveal"><div class="st">★★★★★</div><p>”Så mysigt! Vi åkte hem med en hel kasse grönsaker från butiken.”</p><span>Johan (exempel)</span></div>
+    <div class="rv reveal"><div class="st">★★★★★</div><p>”Perfekt söndagsutflykt. Kaffe i solen och total lantidyll.”</p><span>Sara (exempel)</span></div>
+  </div>
+</div></section>
+
+<section class="visit" id="hitta"><div class="wrap split">
+  <div class="ph reveal"><img src="img/barn2.jpg" alt="Den röda ladan" loading="lazy"></div>
+  <div class="reveal">
+    <span class="kick">Hitta hit</span>
+    <h2>Välkommen <em>ut till oss.</em></h2>
+    <ul class="facts">
+      <li><b>Öppet</b><span>Lördag & söndag 11–16<br><small style="color:var(--mute)">Juli: öppet alla dagar.</small></span></li>
+      <li><b>Adress</b><span>Ängsvägen 1, 700 00 Uppland (exempel)</span></li>
+      <li><b>Telefon</b><a href="tel:+46701740642">070-174 06 42</a></li>
+      <li><b>Hundar</b><span>Välkomna i koppel</span></li>
+    </ul>
+    <div class="tip">🚗 Tips: sista biten är en smal grusväg – använd mötesplatserna om du möter en bil.</div>
+    <a class="btn red" href="https://www.google.com/maps/search/?api=1&amp;query=Uppsala" target="_blank" rel="noopener">Vägbeskrivning →</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><b>Ängsröda gård</b>Ängsvägen 1 · påhittad exempelgård</div>
+  <div>Lör–sön 11–16 · <a href="tel:+46701740642">070-174 06 42</a></div>
+</div></footer>
+
+<div class="mcta"><a href="tel:+46701740642">📞 Ring</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Uppsala" target="_blank" rel="noopener">📍 Hitta hit</a></div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((e,i)=>{e.style.transitionDelay=(i%4)*60+'ms';io.observe(e)});
+</script>
+</body>
+</html>
