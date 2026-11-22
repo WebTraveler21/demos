@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Café Uroxen – Hemgjorda dumplings vid Domkyrkan, Uppsala</title>
+<meta name="description" content="Café Uroxen på S:t Johannesgatan 18 i Uppsala. Hemgjorda dumplings, Sheng Jian Bao och asiatisk lunch från 93 kr – misosoppa, sallad och kaffe ingår. I ett hus från 1928.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webtraveler21.github.io/demos/cafe-uroxen/">
+<meta property="og:title" content="Café Uroxen – er nya hemsida">
+<meta property="og:description" content="Förslag på ny hemsida för Café Uroxen – lunchmeny, Sheng Jian Bao och öppettider. Gjord av Nordlights.">
+<meta property="og:image" content="https://webtraveler21.github.io/demos/cafe-uroxen/preview.jpg">
+<meta property="og:image:width" content="1120">
+<meta property="og:image:height" content="665">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://webtraveler21.github.io/demos/cafe-uroxen/preview.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f5ecdc;--cream2:#ede0c8;--brick:#b4512f;--brick2:#8f3c20;--ink:#191512;--muted:#6f6357;--line:#e0d1b6;--lamp:#e6a640;--r1:12px;--r2:24px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.serif{font-family:"DM Serif Display",Georgia,serif;font-weight:400;letter-spacing:-.015em;text-wrap:balance}
+h2{font-size:clamp(2.1rem,4.8vw,3.4rem);line-height:1.05;margin-bottom:12px}
+h2 em,h1 em{font-style:italic;color:var(--brick)}
+p{text-wrap:pretty}
+.kicker{font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--brick2);margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:1rem;transition:transform .16s cubic-bezier(.23,1,.32,1),background .2s}
+.btn:active{transform:scale(.97)}
+.btn-brick{background:var(--brick);color:#fff}
+.btn-light{background:var(--cream);color:var(--ink)}
+.btn-line{border:1.5px solid currentColor}
+@media(hover:hover){.btn-brick:hover{background:var(--brick2)}.btn-light:hover{background:#fff}}
+
+.demobar{position:fixed;inset:0 0 auto 0;z-index:80;background:#14181b;color:#e8f2ff;font-size:.84rem;text-align:center;padding:8px 14px;line-height:1.4}
+.demobar a{font-weight:700;color:#7fdcff;text-decoration:underline}
+
+nav{position:fixed;inset:36px 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+nav.solid{background:rgba(245,236,220,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-color:var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.sign{display:inline-flex;flex-direction:column;align-items:center;background:#171717;color:#f2efe9;padding:6px 14px 7px;border-radius:4px;font-family:"DM Serif Display",serif;line-height:1;box-shadow:0 6px 16px -8px rgba(0,0,0,.6)}
+.sign b{font-weight:400;font-size:1.2rem;letter-spacing:.08em}
+.sign small{font-size:.66rem;letter-spacing:.22em;border-top:1px solid #6b6b6b;margin-top:4px;padding-top:3px}
+.navlinks{display:flex;gap:28px;font-size:.93rem;font-weight:500;color:#fff}
+nav.solid .navlinks{color:var(--muted)}
+@media(hover:hover){.navlinks a:hover{text-decoration:underline;text-underline-offset:5px}}
+.navcta{min-height:42px;padding:10px 18px;font-size:.9rem}
+.navr{display:flex;align-items:center;gap:12px}
+[data-lsw]{color:#fff;--lsw-on:#fff;--lsw-on-fg:var(--ink)}
+nav.solid [data-lsw]{color:var(--ink);--lsw-on:var(--ink);--lsw-on-fg:#fff}
+@media(max-width:860px){.navlinks{display:none}}
+@media(max-width:420px){.navcta{padding:10px 14px;font-size:.82rem}}
+
+.hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;overflow:hidden;color:#fff}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,21,18,.35) 0%,rgba(25,21,18,.15) 35%,rgba(25,21,18,.82) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:72px}
+.since{display:inline-flex;align-items:center;gap:10px;font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:7px 16px;margin-bottom:20px;backdrop-filter:blur(4px)}
+.dot{width:8px;height:8px;border-radius:50%;background:#5bd16a;box-shadow:0 0 0 4px rgba(91,209,106,.25)}
+.dot.closed{background:#bbb;box-shadow:none}
+.hero h1{font-size:clamp(3rem,8.5vw,6.6rem);line-height:.98;margin-bottom:18px;max-width:11em}
+.hero h1 em{color:var(--lamp)}
+.hero p{font-size:clamp(1.05rem,2vw,1.25rem);max-width:34em;color:#f0e8dc;margin-bottom:28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+
+section{padding:96px 0}
+.head{max-width:640px;margin-bottom:40px}
+.head p{color:var(--muted)}
+
+/* story */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.story .pics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.story .pics img{border-radius:var(--r1);width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.story .pics img:first-child{aspect-ratio:auto;grid-row:span 2}
+.story p{color:#4d443b;margin-bottom:14px;font-size:1.06rem}
+.incl{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.incl span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.88rem;font-weight:600}
+@media(max-width:900px){.story{grid-template-columns:1fr;gap:32px}}
+
+/* signature */
+.sig{background:var(--ink);color:var(--cream)}
+.sig .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center}
+.sig img{border-radius:var(--r2);width:100%;aspect-ratio:4/3;object-fit:cover}
+.sig h2 em{color:var(--lamp)}
+.sig p{color:#cbbfae;font-size:1.06rem;margin-bottom:16px}
+.sig blockquote{border-left:3px solid var(--lamp);padding-left:16px;font-family:"DM Serif Display",serif;font-size:1.3rem;line-height:1.35;color:#fff;margin:24px 0 6px}
+.sig cite{font-style:normal;color:#a1958a;font-size:.86rem}
+@media(max-width:900px){.sig .grid{grid-template-columns:1fr;gap:28px}}
+
+/* lunch menu */
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.item{display:grid;grid-template-columns:38px 1fr auto;gap:4px 14px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+.item .n{font-family:"DM Serif Display",serif;font-size:1.3rem;color:var(--brick)}
+.item h3{font-family:Inter,sans-serif;font-weight:700;font-size:1.02rem;letter-spacing:0}
+.item p{grid-column:2/4;color:var(--muted);font-size:.9rem;line-height:1.45}
+.item .p{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
+.note{margin-top:26px;background:#fff;border:1px dashed var(--brick);border-radius:var(--r1);padding:16px 20px;font-size:.95rem}
+.more{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.more span{border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:.86rem;color:#4d443b;background:var(--cream2)}
+@media(max-width:800px){.menu{grid-template-columns:1fr}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:var(--r1)}
+.gal .w{grid-column:span 2}.gal .t{grid-row:span 2}
+@media(max-width:800px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:160px}}
+
+.revs{background:var(--cream2)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:var(--cream);border-radius:var(--r2);padding:28px;border:1px solid var(--line)}
+.rev .s{color:var(--lamp);letter-spacing:3px;margin-bottom:10px}
+.rev p{margin-bottom:14px}
+.rev cite{font-style:normal;color:var(--muted);font-size:.86rem}
+.score{display:flex;align-items:center;gap:16px;margin-top:32px}
+.score b{font-family:"DM Serif Display",serif;font-size:3.4rem;line-height:1;font-weight:400}
+@media(max-width:900px){.rgrid{grid-template-columns:1fr}}
+
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:24px}
+.info{background:#fff;border:1px solid var(--line);border-radius:var(--r2);padding:32px}
+.info h3{font-family:Inter,sans-serif;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brick2);margin-bottom:6px}
+.blk{margin-bottom:22px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:7px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:var(--brick2);font-weight:700}
+.map{border-radius:var(--r2);overflow:hidden;border:1px solid var(--line);min-height:420px}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:sepia(.25)}
+@media(max-width:820px){.visit{grid-template-columns:1fr}}
+
+.final{position:relative;color:#fff;text-align:center;padding:120px 0;overflow:hidden}
+.final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.final::after{content:"";position:absolute;inset:0;background:rgba(25,21,18,.62)}
+.final .wrap{position:relative;z-index:2}
+.final h2{font-size:clamp(2.4rem,6.5vw,4.4rem)}
+.final p{color:#eadfce;margin:0 auto 28px;max-width:30em}
+.final .btn{margin:6px}
+footer{background:var(--ink);color:#9a8e82;padding:28px 0;font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.mbar{display:none}
+@media(max-width:700px){.mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:12px;right:12px;bottom:12px;z-index:60}.mbar .btn{box-shadow:0 10px 30px -8px rgba(0,0,0,.5)}footer{padding-bottom:96px}}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.23,1,.32,1),transform .8s cubic-bezier(.23,1,.32,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media(max-width:600px){
+html{font-size:14.5px}
+.demobar{font-size:11px;padding:6px 10px;line-height:1.35}.demobar .dm{display:none}
+nav{top:42px}
+.hero h1{font-size:2.7rem}
+h2{font-size:1.95rem}
+section{padding:64px 0}
+.hero .wrap{padding-bottom:110px}
+}
+</style>
+</head>
+<body>
+
+<div class="demobar">✨ Förslag på ny hemsida för Café Uroxen – gjord av <a href="https://thenordlights.com" target="_blank" rel="noopener">Nordlights</a>. Gillar ni den? <a href="https://wa.me/306988214186">WhatsApp</a><span class="dm"> · <a href="mailto:taxirxania21@gmail.com?subject=Hemsida%20Caf%C3%A9%20Uroxen">taxirxania21@gmail.com</a></span></div>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#" class="sign" aria-label="Café Uroxen"><b>CAFÉ</b><small>UROXEN</small></a>
+    <div class="navlinks"><a href="#lunch">Lunchmeny</a><a href="#bao">Sheng Jian Bao</a><a href="#omdomen">Omdömen</a><a href="#hitta">Hitta hit</a></div>
+    <span class="navr"><span data-lsw></span><a href="tel:+4618100658" class="btn btn-brick navcta">Ring 018-10 06 58</a></span>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="img/hero.jpg" alt="Café Uroxens röda hus och svarta skylt på S:t Johannesgatan" fetchpriority="high">
+  <div class="wrap">
+    <div class="since"><span class="dot" id="dot"></span><span id="status">I huset från 1928</span></div>
+    <h1>Hemgjorda dumplings <em>i hjärtat</em> av gamla Uppsala.</h1>
+    <p>Asiatisk lunch från 93 kr i en mysig källare med gamla väggmålningar – ett stenkast från Domkyrkan. Misosoppa, sallad och kaffe ingår alltid.</p>
+    <div class="cta">
+      <a href="#lunch" class="btn btn-brick">Se lunchmenyn</a>
+      <a href="#hitta" class="btn btn-line">Hitta hit →</a>
+    </div>
+  </div>
+</header>
+
+<section id="om">
+  <div class="wrap story">
+    <div class="reveal">
+      <div class="kicker">Välkommen ner</div>
+      <h2>Ett café med <em>historia</em> – och dumplings värda omvägen.</h2>
+      <p>Café Uroxen har funnits på S:t Johannesgatan sedan 1928. Idag lagar vi kinesisk och asiatisk husmanskost: handgjorda dumplings, wontonsoppa, bibimbap och nudlar – snabbt, varmt och till ett schysst pris.</p>
+      <p>Studenter får 10 % rabatt. Flera rätter finns även vegetariska med tofu.</p>
+      <div class="incl"><span>🥣 Misosoppa</span><span>🥗 Sallad</span><span>☕ Kaffe & te</span><span>🫧 Loka / lätt öl</span><span>🍤 Räkchips</span></div>
+    </div>
+    <div class="pics reveal">
+      <img src="img/skylt.jpg" alt="Den svarta skylten Café Uroxen" loading="lazy">
+      <img src="img/huset.jpg" alt="Det röda hörnhuset på kullerstensgatan" loading="lazy">
+      <img src="img/lokal.jpg" alt="Matsalen med väggmålningar" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="bao" class="sig">
+  <div class="wrap grid">
+    <img class="reveal" src="img/bao2.jpg" alt="Shanghai Sheng Jian Bao med sesam och salladslök" loading="lazy">
+    <div class="reveal">
+      <div class="kicker" style="color:var(--lamp)">Husets specialitet</div>
+      <h2>Shanghai <em>Sheng Jian Bao.</em></h2>
+      <p>Stekta, saftiga bullar med krispig botten, fyllda med kött och toppade med sesam och salladslök. Gjorda för hand – som i Shanghai.</p>
+      <blockquote>”Shanghai sheng jian bao helt fantastiska! Vi kommer gärna flera gånger.”</blockquote>
+      <cite>— Mar, Google</cite>
+    </div>
+  </div>
+</section>
+
+<section id="lunch">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker">Lunchmeny</div>
+      <h2>Varm lunch, <em>allt ingår.</em></h2>
+      <p>Misosoppa, sallad, te, kaffe och Loka eller lätt öl ingår i alla rätter.</p>
+    </div>
+    <div class="menu reveal">
+      <div class="item"><span class="n">13</span><h3>Dumplings (hemgjorda)</h3><span class="p">8 st 98 · 10 st 113 kr</span><p>Fläskkött eller biff med grönsaker.</p></div>
+      <div class="item"><span class="n">14</span><h3>Wontonsoppa</h3><span class="p">8 st 98 · 10 st 113 kr</span><p>Kyckling eller fläsk med räkor, champinjon och grönsaker.</p></div>
+      <div class="item"><span class="n">3</span><h3>Kycklingspett</h3><span class="p">4 st 98 · 6 st 115 kr</span><p>Med yakitorisås och ris.</p></div>
+      <div class="item"><span class="n">15</span><h3>Vårrullar</h3><span class="p">12 st 93 kr</span><p>Vegetariska vårrullar med sweet chilisås.</p></div>
+      <div class="item"><span class="n">10</span><h3>Pad Thai</h3><span class="p">från 98 kr</span><p>Kyckling eller tofu 98 · biff 100 · räkor 105 kr.</p></div>
+      <div class="item"><span class="n">12</span><h3>Äggnudlar</h3><span class="p">från 98 kr</span><p>Kyckling eller tofu 98 · biff 100 · räkor 105 kr.</p></div>
+      <div class="item"><span class="n">16</span><h3>Nudelsoppa (hemgjord)</h3><span class="p">från 98 kr</span><p>Kyckling eller tofu 98 · biff 100 kr.</p></div>
+      <div class="item"><span class="n">8</span><h3>Bibimbap</h3><span class="p">se menyn</span><p>Med kyckling, biff eller tofu – grönsaker, kimchi och stekt ägg.</p></div>
+    </div>
+    <div class="more reveal"><span>Gongbao kyckling</span><span>Söt & sur kyckling</span><span>Cashewnöt med biff</span><span>Yakiniku biff</span><span>Cashewnöt med räkor</span><span>Teriyaki lax</span><span>Röd curry</span><span>Japansk curry</span></div>
+    <p class="note reveal">🎓 <b>Student?</b> Visa ditt kort – 10 % rabatt på hela notan.</p>
+  </div>
+</section>
+
+<section id="galleri" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker">Från köket</div>
+      <h2>Lagat med <em>omsorg.</em></h2>
+    </div>
+    <div class="gal reveal">
+      <img class="w t" src="img/dumplings.jpg" alt="Gröna och vita dumplings med dippsås" loading="lazy">
+      <img src="img/soppa.jpg" alt="Nudelsoppa med biff" loading="lazy">
+      <img class="t" src="img/bibimbap.jpg" alt="Bibimbap med stekt ägg" loading="lazy">
+      <img src="img/bao.jpg" alt="Bao-bullar på rosa fat" loading="lazy">
+      <img class="w" src="img/kvall.jpg" alt="Huset på S:t Johannesgatan i kvällsljus" loading="lazy">
+      <img src="img/nudlar.jpg" alt="Äggnudlar" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="omdomen" class="revs">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker">Omdömen</div>
+      <h2>Gästerna <em>har sagt sitt.</em></h2>
+    </div>
+    <div class="rgrid reveal">
+      <div class="rev"><div class="s">★★★★★</div><p>”Så gott, rekommenderas verkligen! Vi åt en fantastisk wontonsoppa och Shanghai Sheng Jian Bao. Trevligt och fint bemötande.”</p><cite>— Carina, Google</cite></div>
+      <div class="rev"><div class="s">★★★★★</div><p>”Liten, väldigt vacker och ren lokal i ett hus från 1928. Vår sursöta kyckling var perfekt på alla sätt och vis.”</p><cite>— Linnea, Google</cite></div>
+      <div class="rev"><div class="s">★★★★★</div><p>”Det bästa jag ätit på länge. Biffen i bibimbapen var otroligt bra – och maten kom så snabbt. 10/10.”</p><cite>— Molly, Google</cite></div>
+    </div>
+    <div class="score reveal"><b>4,1</b><div><span style="color:var(--lamp);letter-spacing:3px">★★★★</span><br>110 omdömen på Google</div></div>
+  </div>
+</section>
+
+<section id="hitta">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker">Hitta hit</div>
+      <h2>S:t Johannesgatan <em>18.</em></h2>
+      <p>Leta efter den svarta skylten på det röda hörnhuset, fem minuter från Domkyrkan.</p>
+    </div>
+    <div class="visit reveal">
+      <div class="info">
+        <div class="blk"><h3>Adress</h3><p>S:t Johannesgatan 18<br>753 12 Uppsala</p></div>
+        <div class="blk"><h3>Telefon</h3><p><a href="tel:+4618100658">018-10 06 58</a></p></div>
+        <div class="blk" style="margin:0"><h3>Öppettider</h3>
+          <table class="hours" id="hours">
+            <tr data-d="1"><td>Måndag</td><td>10–19</td></tr>
+            <tr data-d="2"><td>Tisdag</td><td>10–19</td></tr>
+            <tr data-d="3"><td>Onsdag</td><td>10–19</td></tr>
+            <tr data-d="4"><td>Torsdag</td><td>10–19</td></tr>
+            <tr data-d="5"><td>Fredag</td><td>10–19</td></tr>
+            <tr data-d="6"><td>Lördag</td><td>11–16</td></tr>
+            <tr data-d="0"><td>Söndag</td><td>Stängt</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="map"><iframe loading="lazy" title="Karta till Café Uroxen" src="https://maps.google.com/maps?q=Caf%C3%A9%20Uroxen%2C%20S%3At%20Johannesgatan%2018%2C%20Uppsala&z=16&hl=sv&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <img src="img/dumplings.jpg" alt="" loading="lazy">
+  <div class="wrap reveal">
+    <h2>Dags för lunch?</h2>
+    <p>Kom förbi – eller ring och beställ, så är maten klar när du kommer.</p>
+    <a href="tel:+4618100658" class="btn btn-brick">Ring 018-10 06 58</a>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Caf%C3%A9+Uroxen+Uppsala" class="btn btn-light" target="_blank" rel="noopener">Vägbeskrivning</a>
+  </div>
+</section>
+<footer><div class="wrap"><span>© 2026 Café Uroxen · S:t Johannesgatan 18, Uppsala</span><span>Sedan 1928</span></div></footer>
+
+<div class="mbar"><a href="tel:+4618100658" class="btn btn-brick">Ring</a><a href="#lunch" class="btn btn-light" style="border:1px solid var(--line)">Lunchmeny</a></div>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>60),{passive:true});
+const H={0:null,1:[10,19],2:[10,19],3:[10,19],4:[10,19],5:[10,19],6:[11,16]};
+const now=new Date(),d=now.getDay(),h=now.getHours()+now.getMinutes()/60,t=H[d];
+document.querySelector('#hours tr[data-d="'+d+'"]')?.classList.add('today');
+const st=document.getElementById('status');st.setAttribute('data-notl','');
+function status(){const en=window.getLang&&getLang()==='en';
+if(t&&h>=t[0]&&h<t[1])st.textContent=en?'Open now · until '+t[1]+':00':'Öppet nu · till '+t[1]+':00';
+else{document.getElementById('dot').classList.add('closed');st.textContent=t&&h<t[0]?(en?'Opens today '+t[0]+':00':'Öppnar idag '+t[0]+':00'):(en?'Closed now · since 1928':'Stängt just nu · sedan 1928')}}
+status();window.onLang=status;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<script src="en.js"></script><script src="../sv-en.js"></script>
+</body>
+</html>

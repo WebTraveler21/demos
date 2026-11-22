@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Sushi Art i Uppsala – Färsk sushi i Norby | Beställ online</title>
+<meta name="description" content="Sushi Art på Svampvägen 7A i Norby, Uppsala. Färsk sushi, nigiri och maki från 109 kr. Ät här, hämta eller få hemkört. 4,7 på Google.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webtraveler21.github.io/demos/sushi-art/">
+<meta property="og:title" content="Sushi Art – er nya hemsida">
+<meta property="og:description" content="Förslag på ny hemsida för Sushi Art i Norby, Uppsala – meny, priser och beställning online. Gjord av Nordlights.">
+<meta property="og:image" content="https://webtraveler21.github.io/demos/sushi-art/preview.jpg">
+<meta property="og:image:width" content="1120">
+<meta property="og:image:height" content="665">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://webtraveler21.github.io/demos/sushi-art/preview.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@600;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f6f1ea;--oak:#e7d8c2;--ink:#1d2124;--ink2:#2a2f33;--muted:#6b6660;--line:#e0d5c6;--green:#3fae49;--green2:#2f8f39;--sun:#d6372b;--r1:14px;--r2:26px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.serif{font-family:"Zen Old Mincho",Georgia,serif;font-weight:900;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.08;margin-bottom:12px}
+p{text-wrap:pretty}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green2);margin-bottom:14px}
+.kicker::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--sun)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:1rem;transition:transform .16s cubic-bezier(.23,1,.32,1),background .2s,box-shadow .2s}
+.btn:active{transform:scale(.97)}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 8px 24px -10px rgba(63,174,73,.7)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-line{border:1.5px solid var(--ink);color:var(--ink)}
+@media(hover:hover){.btn-green:hover{background:var(--green2)}.btn-line:hover{background:var(--ink);color:#fff}}
+
+/* demo bar */
+.demobar{position:fixed;inset:0 0 auto 0;z-index:80;background:#14181b;color:#e8f2ff;font-size:.84rem;text-align:center;padding:8px 14px;line-height:1.4}
+.demobar a{font-weight:700;color:#7fdcff;text-decoration:underline}
+body{padding-top:36px}
+
+nav{position:sticky;top:36px;z-index:50;background:rgba(246,241,234,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Zen Old Mincho",serif;font-weight:900;font-size:1.35rem;letter-spacing:-.01em}
+.logo i{width:30px;height:30px;border-radius:50%;background:var(--sun);display:grid;place-items:center;color:#fff;font-style:normal;font-size:.9rem}
+.navlinks{display:flex;gap:28px;font-size:.93rem;color:var(--muted);font-weight:500}
+@media(hover:hover){.navlinks a:hover{color:var(--ink)}}
+.navcta{min-height:42px;padding:10px 18px;font-size:.9rem}
+.navr{display:flex;align-items:center;gap:12px}
+[data-lsw]{color:var(--ink);--lsw-on:var(--ink);--lsw-on-fg:#fff}
+@media(max-width:860px){.navlinks{display:none}}
+@media(max-width:420px){.navcta{padding:10px 14px;font-size:.85rem}.logo{font-size:1.15rem}.logo i{width:26px;height:26px}}
+
+/* hero */
+.hero{padding:56px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.2vw,4.8rem);line-height:1.02;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--green2)}
+.hero p.lead{font-size:1.15rem;color:#47423d;max-width:30em;margin-bottom:28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:22px;margin-top:34px;font-size:.92rem;color:var(--muted)}
+.facts b{display:block;font-size:1.5rem;color:var(--ink);font-family:"Zen Old Mincho",serif;font-variant-numeric:tabular-nums}
+.heroimg{position:relative}
+.heroimg img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:var(--r2);box-shadow:0 30px 60px -30px rgba(29,33,36,.45)}
+.stamp{position:absolute;left:-22px;bottom:28px;background:#fff;border-radius:var(--r1);padding:14px 18px;box-shadow:0 14px 34px -14px rgba(29,33,36,.35);display:flex;align-items:center;gap:12px;font-size:.88rem}
+.stamp b{font-size:1.5rem;font-family:"Zen Old Mincho",serif}
+.stamp .st{color:#e7a614;letter-spacing:2px}
+.vert{position:absolute;right:-14px;top:24px;writing-mode:vertical-rl;font-family:"Zen Old Mincho",serif;font-weight:900;font-size:2.4rem;color:var(--sun);opacity:.9;letter-spacing:.1em}
+.open{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:.85rem;font-weight:600;margin-bottom:22px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(63,174,73,.18)}
+.dot.closed{background:#a39d95;box-shadow:none}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:36px}.stamp{left:12px}.vert{right:10px}}
+
+section{padding:96px 0}
+.head{max-width:640px;margin-bottom:40px}
+.head p{color:var(--muted)}
+
+/* favourites */
+.favs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.fav{background:#fff;border-radius:var(--r2);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.fav img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.fav div{padding:20px 22px 24px;display:flex;flex-direction:column;gap:6px;flex:1}
+.fav h3{font-size:1.3rem}
+.fav p{font-size:.92rem;color:var(--muted);flex:1}
+.fav .pr{font-family:"Zen Old Mincho",serif;font-weight:900;font-size:1.6rem;color:var(--green2);font-variant-numeric:tabular-nums}
+@media(max-width:900px){.favs{grid-template-columns:1fr}}
+
+/* menu board */
+.board{background:var(--ink);color:#f3efe8;border-radius:var(--r2);padding:40px;box-shadow:0 30px 60px -36px rgba(0,0,0,.6)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{border:1px solid #3a4146;background:transparent;color:#cfd6da;font:600 .92rem Inter,sans-serif;padding:10px 18px;border-radius:999px;cursor:pointer;min-height:44px}
+.tab[aria-selected=true]{background:var(--green);border-color:var(--green);color:#fff}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.row{display:flex;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px dashed #3a4146}
+.row span:first-child{font-weight:600}
+.row small{display:block;color:#98a2a8;font-size:.82rem;font-weight:400;line-height:1.4;margin-top:2px}
+.row .fill{flex:1}
+.row .p{font-variant-numeric:tabular-nums;color:#ffd27a;font-weight:700;white-space:nowrap}
+.extras{margin-top:24px;color:#aeb7bc;font-size:.9rem}
+.extras b{color:#fff}
+.list.swap{animation:sw .35s cubic-bezier(.23,1,.32,1)}
+@keyframes sw{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(max-width:760px){.list{grid-template-columns:1fr}.board{padding:26px 20px}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:var(--r1)}
+.gal .w{grid-column:span 2}.gal .t{grid-row:span 2}
+@media(max-width:800px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:170px}}
+
+/* reviews */
+.revs{background:var(--oak)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:var(--paper);border-radius:var(--r2);padding:28px}
+.rev .s{color:#e7a614;letter-spacing:3px;margin-bottom:10px}
+.rev p{margin-bottom:14px}
+.rev cite{font-style:normal;color:var(--muted);font-size:.86rem}
+.score{display:flex;align-items:center;gap:16px;margin-top:32px}
+.score b{font-family:"Zen Old Mincho",serif;font-size:3.4rem;line-height:1}
+@media(max-width:900px){.rgrid{grid-template-columns:1fr}}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:24px}
+.info{background:#fff;border:1px solid var(--line);border-radius:var(--r2);padding:32px}
+.info h3{font-family:Inter,sans-serif;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green2);margin-bottom:6px}
+.blk{margin-bottom:22px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:7px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:var(--ink);font-weight:700}
+.map{border-radius:var(--r2);overflow:hidden;border:1px solid var(--line);min-height:420px}
+.map iframe{width:100%;height:100%;min-height:420px;border:0}
+@media(max-width:820px){.visit{grid-template-columns:1fr}}
+
+.final{text-align:center;background:var(--ink);color:#fff;padding:104px 0}
+.final h2{font-size:clamp(2.2rem,6vw,4rem)}
+.final p{color:#b8c0c4;margin:0 auto 28px;max-width:32em}
+.final .btn{margin:6px}
+.final .btn-line{border-color:#fff;color:#fff}
+footer{background:var(--ink);color:#8c969b;border-top:1px solid #30363a;padding:28px 0;font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.mbar{display:none}
+@media(max-width:700px){.mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:12px;right:12px;bottom:12px;z-index:60}.mbar .btn{box-shadow:0 10px 30px -8px rgba(0,0,0,.45)}footer{padding-bottom:96px}}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.23,1,.32,1),transform .8s cubic-bezier(.23,1,.32,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.list.swap{animation:none}html{scroll-behavior:auto}}
+
+@media(max-width:600px){
+html{font-size:14.5px}
+body{padding-top:42px}
+.demobar{font-size:11px;padding:6px 10px;line-height:1.35}.demobar .dm{display:none}
+nav{top:42px}
+.hero{padding:36px 0 56px}
+.hero h1{font-size:2.5rem}
+h2{font-size:1.9rem}
+section{padding:64px 0}
+.vert{font-size:1.8rem}
+}
+</style>
+</head>
+<body>
+
+<div class="demobar">✨ Förslag på ny hemsida för Sushi Art – gjord av <a href="https://thenordlights.com" target="_blank" rel="noopener">Nordlights</a>. Gillar ni den? <a href="https://wa.me/306988214186">WhatsApp</a><span class="dm"> · <a href="mailto:taxirxania21@gmail.com?subject=Hemsida%20Sushi%20Art">taxirxania21@gmail.com</a></span></div>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo"><i>寿</i>Sushi Art</a>
+    <div class="navlinks"><a href="#favoriter">Favoriter</a><a href="#meny">Meny</a><a href="#omdomen">Omdömen</a><a href="#hitta">Hitta hit</a></div>
+    <span class="navr"><span data-lsw></span><a href="https://qopla.com/restaurant/norby-sushi/qqydVDWo9o/order" class="btn btn-green navcta" target="_blank" rel="noopener">Beställ online</a></span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="open"><span class="dot" id="dot"></span><span id="status">Öppet idag</span></div>
+      <h1>Färsk sushi,<br><em>gjord för hand</em><br>i Norby.</h1>
+      <p class="lead">Nigiri, maki och generösa sushimix – gjorda på beställning med wasabi, edamame, wakame och gari på köpet. Ät här, hämta eller få det hemkört.</p>
+      <div class="cta">
+        <a href="https://qopla.com/restaurant/norby-sushi/qqydVDWo9o/order" class="btn btn-green" target="_blank" rel="noopener">Beställ online →</a>
+        <a href="tel:+46707898774" class="btn btn-line">Ring 070-789 87 74</a>
+      </div>
+      <div class="facts">
+        <div><b>4,7 ★</b>96 omdömen på Google</div>
+        <div><b>109 kr</b>sushi från</div>
+        <div><b>3 sätt</b>ät här · hämta · hemkört</div>
+      </div>
+    </div>
+    <div class="heroimg">
+      <img src="img/hero.jpg" alt="Bord fullt med sushitallrikar hos Sushi Art i Uppsala" fetchpriority="high">
+      <div class="vert" aria-hidden="true">寿司</div>
+      <div class="stamp"><b>4,7</b><div><span class="st">★★★★★</span><br>”I nuläget Uppsalas bästa sushi!”</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="favoriter" style="padding-top:24px">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker">Kundernas favoriter</div>
+      <h2>Något för varje hunger.</h2>
+      <p>Från en snabb lunch till en hel fest – allt görs färskt när du beställer.</p>
+    </div>
+    <div class="favs reveal">
+      <article class="fav"><img src="img/tallrik.jpg" alt="Sushimix med lax, avokado och maki" loading="lazy"><div><h3>Mix 12 bitar</h3><p>3 lax, 1 räka, 2 avokado, 1 crabstick + 3 original och 2 california rullar.</p><span class="pr">149 kr</span></div></article>
+      <article class="fav"><img src="img/fat.jpg" alt="Stort färgglatt sushifat" loading="lazy"><div><h3>Familjesushi 30 bitar</h3><p>Halstrad och marinerad lax, räkor, tonfisk, hamachi, 5 original och 5 california. ”Rekommenderar familjesushin!”</p><span class="pr">365 kr</span></div></article>
+      <article class="fav"><img src="img/bord.jpg" alt="Festbord med sushi och dryck" loading="lazy"><div><h3>Festsushi 60 bitar</h3><p>Allt från lax och tofu till tonfisk och hamachi – plus 20 rullar. Perfekt till kalaset eller jobbet.</p><span class="pr">679 kr</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="meny" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker">Meny</div>
+      <h2>Hela menyn. Raka priser.</h2>
+    </div>
+    <div class="board reveal">
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <div class="list" id="list"></div>
+      <p class="extras"><b>Ingår alltid:</b> wasabi, edamame, wakame, gari, picklad lök och citron. <b>Topping:</b> chilimajonnäs, teriyakisås, rostad lök, rödbetor.</p>
+    </div>
+  </div>
+</section>
+
+<section id="galleri" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker">Från köket</div>
+      <h2>Så här ser det ut.</h2>
+    </div>
+    <div class="gal reveal">
+      <img class="w t" src="img/lax.jpg" alt="Sushitallrik på mörk keramik" loading="lazy">
+      <img src="img/rulle.jpg" alt="Inside-out rullar med lax" loading="lazy">
+      <img class="t" src="img/nigiri.jpg" alt="Laxnigiri i rad" loading="lazy">
+      <img src="img/mix.jpg" alt="Halstrad lax på rullar" loading="lazy">
+      <img class="w" src="img/lokal.jpg" alt="Restaurangen med ljusa träpaneler" loading="lazy">
+      <img src="img/fest.jpg" alt="Många sushitallrikar på bordet" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="omdomen" class="revs">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker">Omdömen</div>
+      <h2>Det säger gästerna.</h2>
+    </div>
+    <div class="rgrid reveal">
+      <div class="rev"><div class="s">★★★★★</div><p>”I nuläget Uppsalas bästa sushi! California rolls och tempurarullarna är fantastiska. Goda smaker, fräscht och trevlig personal.”</p><cite>— Emily, Google</cite></div>
+      <div class="rev"><div class="s">★★★★★</div><p>”Absolut bästa sushin! Jag har varit här flera gånger och blir aldrig missnöjd. Prisvärt, och maten är väldigt fräsch.”</p><cite>— Caroline, Google</cite></div>
+      <div class="rev"><div class="s">★★★★★</div><p>”Jättegod sushi av hög kvalité, snabb upphämtning och mycket trevlig personal!”</p><cite>— Lisa, Google</cite></div>
+    </div>
+    <div class="score reveal"><b>4,7</b><div><span style="color:#e7a614;letter-spacing:3px">★★★★★</span><br>96 omdömen på Google</div></div>
+  </div>
+</section>
+
+<section id="hitta">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker">Hitta hit</div>
+      <h2>Svampvägen 7A, Norby.</h2>
+      <p>Rullstolsanpassad entré och parkering.</p>
+    </div>
+    <div class="visit reveal">
+      <div class="info">
+        <div class="blk"><h3>Adress</h3><p>Svampvägen 7A<br>756 45 Uppsala</p></div>
+        <div class="blk"><h3>Telefon</h3><p><a href="tel:+46707898774">070-789 87 74</a></p></div>
+        <div class="blk" style="margin:0"><h3>Öppettider</h3>
+          <table class="hours" id="hours">
+            <tr data-d="1"><td>Måndag</td><td>11–20</td></tr>
+            <tr data-d="2"><td>Tisdag</td><td>11–20</td></tr>
+            <tr data-d="3"><td>Onsdag</td><td>11–20</td></tr>
+            <tr data-d="4"><td>Torsdag</td><td>11–20</td></tr>
+            <tr data-d="5"><td>Fredag</td><td>11–21</td></tr>
+            <tr data-d="6"><td>Lördag</td><td>11–20</td></tr>
+            <tr data-d="0"><td>Söndag</td><td>12–20</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="map"><iframe loading="lazy" title="Karta till Sushi Art" src="https://maps.google.com/maps?q=Sushi%20Art%20i%20Uppsala%2C%20Svampv%C3%A4gen%207A&z=15&hl=sv&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <h2>Sugen på sushi?</h2>
+    <p>Beställ online och hämta när det passar – eller ring så fixar vi resten.</p>
+    <a href="https://qopla.com/restaurant/norby-sushi/qqydVDWo9o/order" class="btn btn-green" target="_blank" rel="noopener">Beställ online →</a>
+    <a href="tel:+46707898774" class="btn btn-line">Ring 070-789 87 74</a>
+  </div>
+</section>
+<footer><div class="wrap"><span>© 2026 Sushi Art i Uppsala · Svampvägen 7A, Norby</span><span>Ät här · Hämta · Hemkört</span></div></footer>
+
+<div class="mbar"><a href="tel:+46707898774" class="btn btn-dark">Ring</a><a href="https://qopla.com/restaurant/norby-sushi/qqydVDWo9o/order" class="btn btn-green" target="_blank" rel="noopener">Beställ</a></div>
+
+<script>
+const MENU={
+ "Sushi mix":[["Mix 8 bitar","2 lax, 1 räka, 1 avokado · 2 original, 2 california",115],["Mix 10 bitar","3 lax, 1 räka, 2 avokado · 2 original, 2 california",129],["Mix 12 bitar","3 lax, 1 räka, 2 avokado, 1 crabstick · 3 original, 2 california",149],["Mix 14 bitar","+ marinerad lax och tonfisk",165],["Mix 18 bitar","4 lax, 2 räkor, 2 avokado, crabstick, marinerad lax, tonfisk, hamachi · 6 rullar",209],["Familjesushi 30 bitar","Halstrad & marinerad lax, räkor, avokado, tonfisk, hamachi · 10 rullar",365],["Festsushi 60 bitar","Lax, halstrad lax, räkor, avokado, tofu, tonfisk, hamachi · 20 rullar",679]],
+ "Nigiri":[["Lax 8 bitar","",139],["Lax 10 bitar","",159],["Lax 12 bitar","",179],["Lax 18 bitar","",239],["Räkor 8 bitar","",129],["Avokado 8 bitar","",119],["Lax & räkor 10 bitar","",149],["Lax, räkor & avokado 9 bitar","",139],["Lax, räkor & avokado 30 bitar","",399]],
+ "Nigiri & maki":[["4 nigiri & 4 maki","",115],["5 nigiri & 5 maki","",129],["6 nigiri & 6 maki","",145],["9 nigiri & 9 maki","",199],["Lax & maki 10 bitar","",129],["Räkor & maki 10 bitar","",129],["Avokado & maki 8 bitar","",109],["Lax, avokado & maki 12 bitar","",145]],
+ "Mamma sushi":[["Mamma sushi 10 bitar","2 räkor, 1 surimi, 1 avokado, 1 tofu, 5 california",125],["Mamma sushi 12 bitar","2 räkor, 2 surimi, 2 avokado, 1 tofu, 5 california",145],["Mamma sushi 14 bitar","3 räkor, 2 surimi, 2 avokado, 2 tofu, 5 california",159],["Mamma sushi 18 bitar","4 räkor, 3 surimi, 3 avokado, 3 tofu, 5 california",199]]
+};
+const tabs=document.getElementById('tabs'),list=document.getElementById('list');
+const MW=[[/bitar/g,'pieces'],[/Familjesushi/g,'Family sushi'],[/Festsushi/g,'Party sushi'],[/Mamma sushi/g,'Mama sushi'],[/marinerad/gi,'marinated'],[/Halstrad/g,'Seared'],[/halstrad/g,'seared'],[/räkor/g,'shrimp'],[/Räkor/g,'Shrimp'],[/räka/g,'shrimp'],[/(^|[^\p{L}])lax(?![\p{L}])/gu,'$1salmon'],[/(^|[^\p{L}])Lax(?![\p{L}])/gu,'$1Salmon'],[/avokado/g,'avocado'],[/Avokado/g,'Avocado'],[/tonfisk/g,'tuna'],[/rullar/g,'rolls'],[/(^|[^\p{L}])och(?![\p{L}])/gu,'$1and'],[/ med /g,' with ']];
+const mt=s=>window.getLang&&getLang()==='en'?MW.reduce((a,[r,t])=>a.replace(r,t),s):s;
+let cur='Sushi mix';
+function show(k){
+  cur=k;
+  [...tabs.children].forEach(b=>{b.setAttribute('aria-selected',b.dataset.k===k);b.textContent=mt(b.dataset.k)});
+  list.innerHTML=MENU[k].map(([n,d,p])=>`<div class="row"><span>${mt(n)}${d?`<small>${mt(d)}</small>`:''}</span><span class="fill"></span><span class="p">${p} kr</span></div>`).join('');
+  list.classList.remove('swap');void list.offsetWidth;list.classList.add('swap');
+}
+Object.keys(MENU).forEach(k=>{const b=document.createElement('button');b.className='tab';b.role='tab';b.dataset.k=k;b.textContent=k;b.onclick=()=>show(k);tabs.appendChild(b)});
+show('Sushi mix');
+
+const H={0:[12,20],1:[11,20],2:[11,20],3:[11,20],4:[11,20],5:[11,21],6:[11,20]};
+const now=new Date(),d=now.getDay(),h=now.getHours()+now.getMinutes()/60,[o,c]=H[d];
+document.querySelector('#hours tr[data-d="'+d+'"]')?.classList.add('today');
+const st=document.getElementById('status');st.setAttribute('data-notl','');
+function status(){const en=window.getLang&&getLang()==='en';
+if(h>=o&&h<c)st.textContent=en?'Open now · closes '+c+':00':'Öppet nu · stänger '+c+':00';
+else{document.getElementById('dot').classList.add('closed');st.textContent=h<o?(en?'Opens today '+o+':00':'Öppnar idag '+o+':00'):(en?'Closed for today':'Stängt för idag')}}
+status();
+window.onLang=()=>{status();show(cur)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<script src="en.js"></script><script src="../sv-en.js"></script>
+</body>
+</html>
