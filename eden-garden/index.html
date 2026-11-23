@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Eden Garden – Indisk restaurang i Studentstaden, Uppsala</title>
+<meta name="description" content="Eden Garden Indisk Restaurang i Studentstaden, Uppsala. Butter masala, tandoori, fräsande sizzlers och thali. Ät här, hämta eller få hemkört. Öppet varje dag.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webtraveler21.github.io/demos/eden-garden/">
+<meta property="og:title" content="Eden Garden – er nya hemsida">
+<meta property="og:description" content="Förslag på ny hemsida för Eden Garden Indisk Restaurang i Uppsala – meny, sizzlers och öppettider. Gjord av Nordlights.">
+<meta property="og:image" content="https://webtraveler21.github.io/demos/eden-garden/preview.jpg">
+<meta property="og:image:width" content="1120">
+<meta property="og:image:height" content="665">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://webtraveler21.github.io/demos/eden-garden/preview.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fbf3e4;--sand:#f1e2c6;--ink:#231a14;--muted:#6e5f52;--line:#e8d6b8;--red:#c8231c;--red2:#a51b15;--gold:#f2b632;--green:#1d5e3a;--char:#17110d;--r1:14px;--r2:26px;--ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:clip}
+body{background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.serif{font-family:"Rozha One",Georgia,serif;font-weight:400;letter-spacing:-.01em;line-height:1.05;text-wrap:balance}
+h2{font-size:clamp(2.1rem,4.8vw,3.4rem);margin-bottom:14px}
+p{text-wrap:pretty}
+section{padding:96px 0}@media(max-width:700px){section{padding:64px 0}}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.kicker::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(242,182,50,.25)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:1rem;transition:transform .16s var(--ease),background .2s,color .2s}
+.btn:active{transform:scale(.97)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(200,35,28,.8)}
+.btn-gold{background:var(--gold);color:var(--char)}
+.btn-line{border:1.5px solid currentColor}
+@media(hover:hover){.btn-red:hover{background:var(--red2)}.btn-gold:hover{background:#ffc94d}}
+.demobar{position:fixed;inset:0 0 auto 0;z-index:80;background:#14181b;color:#e8f2ff;font-size:.84rem;text-align:center;padding:8px 14px;line-height:1.4}
+.demobar a{font-weight:700;color:#7fdcff;text-decoration:underline}
+body{padding-top:36px}
+nav{position:sticky;top:36px;z-index:50;background:rgba(251,243,228,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Rozha One",serif;font-size:1.4rem;color:var(--red)}
+.logo img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.navlinks{display:flex;gap:28px;font-size:.93rem;font-weight:500;color:var(--muted)}
+@media(hover:hover){.navlinks a:hover{color:var(--ink)}}
+.navr{display:flex;align-items:center;gap:12px}.navcta{min-height:42px;padding:10px 18px;font-size:.9rem}
+[data-lsw]{color:var(--ink);--lsw-on:var(--ink);--lsw-on-fg:#fff}
+@media(max-width:880px){.navlinks{display:none}}
+@media(max-width:600px){.navcta .num{display:none}.logo span{display:none}}
+@media(max-width:420px){.navcta{padding:10px 14px;font-size:.84rem}.logo{font-size:1.15rem}.logo img{width:36px;height:36px}}
+
+.hero{position:relative;min-height:calc(100svh - 106px);display:flex;align-items:flex-end;padding:64px 0;color:#fff;overflow:hidden;background:var(--char)}
+.hero .bg{position:absolute;inset:0;background:url(img/hero.jpg) center 55%/cover;transform:scale(1.05);animation:zoom 2.2s var(--ease) forwards}
+@keyframes zoom{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,17,13,.85),rgba(23,17,13,.45) 55%,rgba(23,17,13,.1)),linear-gradient(0deg,rgba(23,17,13,.7),transparent 50%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.45);font-size:.86rem;font-weight:600;margin-bottom:20px;backdrop-filter:blur(6px)}
+.dot{width:8px;height:8px;border-radius:50%;background:#6fd36b;box-shadow:0 0 0 4px rgba(111,211,107,.2)}.dot.closed{background:#d9a441;box-shadow:none}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);max-width:13ch;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{font-size:1.12rem;max-width:46ch;color:#f3e6d2;margin-bottom:28px}
+.hcta{display:flex;flex-wrap:wrap;gap:12px}
+.fade{opacity:0;transform:translateY(18px);animation:up .9s var(--ease) forwards}.d1{animation-delay:.15s}.d2{animation-delay:.3s}.d3{animation-delay:.45s}.d4{animation-delay:.6s}
+@keyframes up{to{opacity:1;transform:none}}
+.strip{background:var(--red);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-top:22px;padding-bottom:22px}
+.strip div{font-size:.9rem;color:#ffe3d6}.strip b{display:block;font-family:"Rozha One",serif;font-weight:400;font-size:1.45rem;color:#fff;line-height:1.2}
+@media(max-width:800px){.strip .wrap{grid-template-columns:1fr 1fr}}
+
+/* sizzler */
+.sizz{background:var(--char);color:#f6ead6;overflow:hidden}
+.sizz .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.sizz .ph{position:relative;border-radius:var(--r2);overflow:hidden;aspect-ratio:4/3.3}
+.sizz .ph img{width:100%;height:100%;object-fit:cover}
+.steam{position:absolute;inset:0;pointer-events:none}
+.steam i{position:absolute;bottom:20%;width:90px;height:160px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.28),transparent);filter:blur(6px);opacity:0;animation:steam 4.5s ease-out infinite}
+.steam i:nth-child(1){left:22%}.steam i:nth-child(2){left:48%;animation-delay:1.5s}.steam i:nth-child(3){left:68%;animation-delay:3s}
+@keyframes steam{0%{opacity:0;transform:translateY(40px) scale(.7)}30%{opacity:.9}100%{opacity:0;transform:translateY(-140px) scale(1.4)}}
+.sizz .kicker{color:var(--gold)}
+.sizz p.lead{color:#d9c6ab;font-size:1.08rem;margin-bottom:24px;max-width:44ch}
+.slist{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.slist span{border:1px solid #4a3a2c;border-radius:999px;padding:8px 14px;font-size:.88rem;color:#f6ead6}
+@media(max-width:900px){.sizz .grid{grid-template-columns:1fr;gap:36px}}
+
+/* menu */
+.mtop{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.mtop p{max-width:42ch;color:var(--muted)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tab{appearance:none;border:1.5px solid var(--line);background:#fff;color:var(--muted);font:600 .9rem Inter,sans-serif;padding:10px 18px;border-radius:999px;cursor:pointer;min-height:44px;transition:background .2s,color .2s,border-color .2s}
+.tab[aria-selected=true]{background:var(--red);border-color:var(--red);color:#fff}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:var(--r2);padding:12px 28px}
+.row{display:flex;align-items:baseline;gap:12px;padding:16px 0;border-bottom:1px dashed var(--line)}.row:last-child{border:0}
+.row .n{font-weight:700}.row small{display:block;color:var(--muted);font-weight:400;font-size:.9rem}
+.row .f{flex:1}.row .p{font-variant-numeric:tabular-nums;font-weight:700;color:var(--red);white-space:nowrap}
+.mcard.swap .row{animation:up .45s var(--ease) both}
+.mnote{margin-top:14px;font-size:.88rem;color:var(--muted)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+.gal figure{border-radius:var(--r1);overflow:hidden}.gal img{width:100%;height:100%;object-fit:cover}
+.gal .w2{grid-column:span 2}.gal .h2{grid-row:span 2}
+@media(max-width:800px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}}
+
+/* reviews */
+.revs{background:var(--sand)}
+.quote{font-family:"Rozha One",serif;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.1;max-width:20ch;margin-bottom:10px}
+.who{color:var(--muted);margin-bottom:40px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rc{background:#fff;border-radius:var(--r1);padding:24px;border:1px solid var(--line)}
+.rc .s{color:var(--gold);letter-spacing:.15em;margin-bottom:10px}.rc p{margin-bottom:12px}.rc span{color:var(--muted);font-size:.88rem}
+@media(max-width:900px){.rgrid{grid-template-columns:1fr}}
+
+/* visit */
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.visit .ph{border-radius:var(--r2);overflow:hidden;aspect-ratio:4/3}.visit .ph img{width:100%;height:100%;object-fit:cover}
+.blk{margin-bottom:26px}.blk h3{font-size:1.4rem;margin-bottom:8px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:8px 0;border-bottom:1px solid var(--line)}.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{font-weight:700;color:var(--ink)}
+@media(max-width:900px){.visit .grid{grid-template-columns:1fr;gap:32px}}
+.final{background:var(--red);color:#fff;text-align:center}
+.final p{color:#ffe3d6;margin-bottom:26px}.final .hcta{justify-content:center}
+footer{background:var(--char);color:#bfae97;padding:32px 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mbar{display:none}
+@media(max-width:700px){.mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:12px;right:12px;bottom:12px;z-index:60}.mbar .btn{box-shadow:0 10px 30px -8px rgba(0,0,0,.45)}footer{padding-bottom:96px}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.reveal.in{opacity:1;transform:none}
+@media(max-width:600px){html{font-size:14.5px}.demobar{font-size:11px;padding:6px 10px;line-height:1.35}.demobar .dm{display:none}body{padding-top:42px}nav{top:42px}.hero{min-height:calc(100svh - 112px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.fade,.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demobar">✨ Förslag på ny hemsida för Eden Garden – gjord av <a href="https://thenordlights.com" target="_blank" rel="noopener">Nordlights</a>. Gillar ni den? <a href="https://wa.me/306988214186">WhatsApp</a><span class="dm"> · <a href="mailto:taxirxania21@gmail.com?subject=Hemsida%20Eden%20Garden">taxirxania21@gmail.com</a></span></div>
+<nav><div class="wrap">
+  <a href="#top" class="logo"><img src="img/logo.jpg" alt="Eden Garden logotyp">Eden Garden</a>
+  <div class="navlinks"><a href="#sizzlers">Sizzlers</a><a href="#meny">Meny</a><a href="#omdomen">Omdömen</a><a href="#hitta">Hitta hit</a></div>
+  <span class="navr"><span data-lsw></span><a href="tel:+4618525007" class="btn btn-red navcta">Ring<span class="num" data-notl> 018-52 50 07</span></a></span>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="bg" role="img" aria-label="Eden Garden med uteserveringen i Studentstaden"></div>
+  <div class="wrap">
+    <span class="chip fade d1"><span class="dot" id="dot"></span><span id="status">Öppet idag</span></span>
+    <h1 class="fade d2">Indiska smaker <em>mitt i</em> Studentstaden.</h1>
+    <p class="fade d3">Butter masala, tandoori och fräsande sizzlers – lagat med kärlek och generösa portioner. Ät här, hämta eller få det hemkört.</p>
+    <div class="hcta fade d4"><a href="#meny" class="btn btn-gold">Se menyn</a><a href="tel:+4618525007" class="btn btn-line">Ring & beställ</a></div>
+  </div>
+</header>
+<div class="strip"><div class="wrap">
+  <div><b>Varje dag</b>öppet till 23 – helger till 00</div>
+  <div><b>Ät här</b>eller sitt ute på terrassen</div>
+  <div><b>Hämta</b>ring och beställ i förväg</div>
+  <div><b>Hemkört</b>via foodora</div>
+</div></div>
+
+<section class="sizz" id="sizzlers">
+  <div class="wrap grid">
+    <div class="ph reveal"><img src="img/sizzle.jpg" alt="Sizzlers som fräser över gaslågan"><div class="steam"><i></i><i></i><i></i></div></div>
+    <div class="reveal">
+      <span class="kicker">Husets favorit</span>
+      <h2>Det fräser när det kommer.</h2>
+      <p class="lead">Våra sizzlers serveras på glödhet gjutjärnsplatta – med lök, paprika och en skiva citron. Doften når bordet innan maten gör det.</p>
+      <div class="slist"><span>Kyckling Tikka</span><span>Hot Tandoori</span><span>Chili Kyckling</span><span>Vitlökskyckling</span><span>Lamm Tikka</span><span>Lax</span><span>Kungsräkor</span><span>Mix Sizzlar</span></div>
+      <a href="#meny" class="btn btn-gold">Hela menyn</a>
+    </div>
+  </div>
+</section>
+
+<section id="meny">
+  <div class="wrap">
+    <div class="mtop reveal"><div><span class="kicker">Meny</span><h2>Från tandoorn<br>till din tallrik.</h2></div><p>Alla huvudrätter serveras med ris och sallad. Välj kyckling, lamm, biff, räkor eller vegetariskt.</p></div>
+    <div class="tabs reveal" id="tabs" role="tablist"></div>
+    <div class="mcard reveal" id="list" data-notl></div>
+    <p class="mnote">Priser enligt foodora – i restaurangen kan priserna skilja.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="gal">
+      <figure class="w2 h2 reveal"><img src="img/thali.jpg" alt="Thali med naan, ris och flera curryrätter" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/curry.jpg" alt="Två curryrätter med ris" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/sizzle2.jpg" alt="Kyckling tikka sizzler med citron" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/naan.jpg" alt="Naan och curry i kvällsljus" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/plates.jpg" alt="Samosa och tandoori på tallrik" loading="lazy"></figure>
+      <figure class="w2 reveal"><img src="img/lokal.jpg" alt="Matsalen på Eden Garden" loading="lazy"></figure>
+      <figure class="w2 reveal"><img src="img/sizzle3.jpg" alt="Sizzler med grönsaker och citron" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="revs" id="omdomen">
+  <div class="wrap">
+    <span class="kicker reveal">Omdömen på Google</span>
+    <p class="quote reveal">”Troligtvis bästa indiern i Uppsala.”</p>
+    <p class="who reveal">— Henning, Google</p>
+    <div class="rgrid">
+      <div class="rc reveal"><div class="s">★★★★★</div><p>”Bästa butter chicken ever! Köper mat härifrån ofta.”</p><span>— Sofia, Google</span></div>
+      <div class="rc reveal"><div class="s">★★★★★</div><p>”Godaste indiska jag ätit i Sverige utan tvekan. Tikka masala var gudomlig. Riktigt gott naanbröd dessutom.”</p><span>— Linus, Google</span></div>
+      <div class="rc reveal"><div class="s">★★★★★</div><p>”Vi beställde tandoori kyckling, tikka masala och balti. Allt smakade himmelskt.”</p><span>— Märta, Google</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="hitta">
+  <div class="wrap grid">
+    <div class="ph reveal"><img src="img/kvall.jpg" alt="Eden Garden i Studentstaden i kvällsljus" loading="lazy"></div>
+    <div class="reveal">
+      <span class="kicker">Hitta hit</span><h2>Välkommen till Studentstaden.</h2>
+      <div class="blk"><h3>Adress</h3><p>Studentstaden, 752 61 Uppsala</p></div>
+      <div class="blk"><h3>Telefon</h3><p><a href="tel:+4618525007">018-52 50 07</a></p></div>
+      <div class="blk" style="margin:0"><h3>Öppettider</h3>
+        <table class="hours" id="hours">
+          <tr data-d="1"><td>Måndag</td><td>11–23</td></tr><tr data-d="2"><td>Tisdag</td><td>11–23</td></tr><tr data-d="3"><td>Onsdag</td><td>11–23</td></tr><tr data-d="4"><td>Torsdag</td><td>11–23</td></tr><tr data-d="5"><td>Fredag</td><td>11–23</td></tr><tr data-d="6"><td>Lördag</td><td>13–00</td></tr><tr data-d="0"><td>Söndag</td><td>13–00</td></tr>
+        </table>
+      </div>
+      <div class="hcta" style="margin-top:26px"><a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&query=Eden+Garden+Indisk+Restaurang+Uppsala" target="_blank" rel="noopener">Vägbeskrivning</a><a class="btn btn-line" href="https://www.foodora.se/restaurant/h11b/eden-garden" target="_blank" rel="noopener">Hemkört via foodora</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal"><h2>Sugen på indiskt ikväll?</h2><p>Ring och beställ – maten är klar när du kommer.</p>
+  <div class="hcta"><a href="tel:+4618525007" class="btn btn-gold">Ring 018-52 50 07</a><a href="https://www.foodora.se/restaurant/h11b/eden-garden" class="btn btn-line" target="_blank" rel="noopener">Beställ hemkört</a></div></div>
+</section>
+<footer><div class="wrap"><span>© 2026 Eden Garden Indisk Restaurang · Studentstaden, Uppsala</span><span>Ät här · Hämta · Hemkört</span></div></footer>
+<div class="mbar"><a href="tel:+4618525007" class="btn btn-red">Ring</a><a href="#meny" class="btn btn-gold">Meny</a></div>
+
+<script>
+const MENU={
+ "Butter masala":{en:"Butter masala",i:[["Kyckling Tikka Butter Masala","Chicken Tikka Butter Masala",219],["Vitlökskyckling Butter Masala","Garlic Chicken Butter Masala",229],["Mango Kyckling Butter Masala","Mango Chicken Butter Masala",229],["Lamm Tikka Butter Masala","Lamb Tikka Butter Masala",229],["Scampi Butter Masala","Scampi Butter Masala",229]]},
+ "Curry & klassiker":{en:"Curry & classics",i:[["Kyckling Tandoori","Tandoori Chicken",166],["Curryrätter","Curry dishes",186],["Korma","Korma",196],["Bhuna","Bhuna",196],["Madras","Madras",196],["Vindaloo","Vindaloo",196],["Sambal Masala","Sambal Masala",209]]},
+ "Sizzlers":{en:"Sizzlers",i:[["Kyckling Tikka Sizzlar","Chicken Tikka Sizzler",186],["Hot Tandoori Kyckling Sizzlar","Hot Tandoori Chicken Sizzler",186],["Chili Kyckling Sizzlar","Chilli Chicken Sizzler",196],["Vitlökskyckling Sizzlar","Garlic Chicken Sizzler",196],["Lamm Tikka Sizzlar","Lamb Tikka Sizzler",206],["Lax Sizzlar","Salmon Sizzler",206],["Kungsräkor Sizzlar","King Prawn Sizzler",236]]},
+ "Vegetariskt":{en:"Vegetarian",i:[["Palak Paneer Balti","Palak Paneer Balti",185],["Dhal Makhani","Dhal Makhani",176],["Alo Gobi","Aloo Gobi",176],["Spenat Bhaji","Spinach Bhaji",176],["Chana Dal","Chana Dal",199],["Vegetarisk Masala","Vegetable Masala",220]]},
+ "Thali & special":{en:"Thali & specials",i:[["Mix Kyckling Thali","Mixed Chicken Thali",225],["Mix Thali","Mixed Thali",236],["Vegetarisk Thali","Vegetarian Thali",239],["Biryani","Biryani",239],["Paneer Hindustani","Paneer Hindustani",250],["Mixed Special","Mixed Special",259]]},
+ "Smått & naan":{en:"Starters & naan",i:[["Tikka Chat","Tikka Chaat",62],["Kycklingsoppa","Chicken soup",72],["Naan","Naan",37],["Vitlöksnaan","Garlic naan",42],["Barnrätt (köttbullar, tikka masala m.m.)","Kids' dish (meatballs, tikka masala etc.)",96]]}
+};
+const EN_=()=>window.getLang&&getLang()==='en';
+const tabs=document.getElementById('tabs'),list=document.getElementById('list');let cur="Butter masala";
+function show(k){cur=k;const en=EN_();[...tabs.children].forEach(b=>{b.setAttribute('aria-selected',b.dataset.k===k);b.textContent=en?MENU[b.dataset.k].en:b.dataset.k});
+ list.innerHTML=MENU[k].i.map(([s,e,p])=>`<div class="row"><span class="n">${en?e:s}</span><span class="f"></span><span class="p">${en?'from':'från'} ${p} kr</span></div>`).join('');list.classList.remove('swap');void list.offsetWidth;list.classList.add('swap')}
+Object.keys(MENU).forEach(k=>{const b=document.createElement('button');b.className='tab';b.setAttribute('role','tab');b.dataset.k=k;b.onclick=()=>show(k);tabs.appendChild(b)});show(cur);
+const H={1:[11,23],2:[11,23],3:[11,23],4:[11,23],5:[11,23],6:[13,24],0:[13,24]};const now=new Date(),d=now.getDay(),h=now.getHours()+now.getMinutes()/60,[o,c]=H[d];
+document.querySelector('#hours tr[data-d="'+d+'"]')?.classList.add('today');const st=document.getElementById('status');st.setAttribute('data-notl','');
+function status(){const en=EN_(),cc=c===24?'00':c;if(h>=o&&h<c){document.getElementById('dot').classList.remove('closed');st.textContent=en?'Open now · closes '+cc+':00':'Öppet nu · stänger '+cc+':00'}else{document.getElementById('dot').classList.add('closed');st.textContent=h<o?(en?'Opens today '+o+':00':'Öppnar idag '+o+':00'):(en?'Closed for today':'Stängt för idag')}}
+status();window.onLang=()=>{status();show(cur)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<script src="en.js"></script><script src="../sv-en.js"></script>
+</body>
+</html>
