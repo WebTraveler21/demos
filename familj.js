@@ -1,9 +1,8 @@
-/* Family switcher shared by Ta'ameya, Cucina Povera, Non Parlo Italiano, The Rolling Bagels and Danderyds Saluhall demos */
+/* Family switcher shared by Ta'ameya, Cucina Povera, The Rolling Bagels and Danderyds Saluhall demos */
 (function(){
 var B=[
  {k:'taameya',n:"Ta'ameya",c:'#d6f06a',f:"900 13px/1 Archivo,Inter,sans-serif",u:'taameya'},
  {k:'cucina-povera',n:'cucina povera',c:'#2f6b48',f:"italic 400 15px/1 'Instrument Serif',Georgia,serif",u:'cucina-povera'},
- {k:'non-parlo-italiano',n:'Non Parlo Italiano',c:'#2457d6',f:"italic 900 13px/1 Archivo,Inter,sans-serif",u:'non-parlo-italiano'},
  {k:'rolling-bagels',n:'The Rolling Bagels',c:'#c8343a',f:"400 14px/1 'Lilita One',Inter,sans-serif",u:'rolling-bagels'},
  {k:'danderyds-saluhall',n:'Danderyds Saluhall',c:'#c59a52',f:"500 14px/1 Fraunces,Georgia,serif",u:'danderyds-saluhall'}
 ];

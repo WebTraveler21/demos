@@ -59,7 +59,7 @@ window.EN={
 "Menyn kan ändras – fråga i kassan om dagens utbud och allergener.": "The menu may change – ask at the counter about today’s range and allergens.",
 "Fresh out the box": "Fresh out the box",
 "Varje bagel packas i vår röda låda – ät på uteserveringen eller ta med.": "Every bagel goes in our red box – eat on the terrace or take it away.",
-"Nära Odenplan och Rådmansgatan. På kvällen: Non Parlo Italiano på samma adress.": "Near Odenplan and Rådmansgatan. In the evening: Non Parlo Italiano at the same address.",
+"Nära Odenplan och Rådmansgatan.": "Near Odenplan and Rådmansgatan.",
 "Kom förbi på Odengatan 43 – och följ oss för veckans nyheter.": "Drop by Odengatan 43 – and follow us for this week’s news.",
 "Instagram": "Instagram"
 };
