@@ -439,10 +439,10 @@ footer .sis{grid-column:1/-1;border-top:1px solid #222;padding-top:20px;margin-t
   <div class="wrap">
     <div class="reveal"><span class="kicker">Från samma gäng</span><h2>Våra andra ställen.</h2></div>
     <div class="fgrid">
-      <a class="fc cp reveal" href="https://www.cucinapovera.se/" target="_blank" rel="noopener"><div><div class="nm" data-notl>cucina povera</div><p>Romersk focaccia, färsk pasta och tunna krispiga pizzor.</p></div><span class="go" data-notl>cucinapovera.se ↗</span></a>
-      <a class="fc np reveal" href="https://www.nonparloitaliano.se/" target="_blank" rel="noopener"><div><div class="nm" data-notl>Non Parlo Italiano</div><p>Italiensk-amerikansk middag i Vasastan.</p></div><span class="go" data-notl>nonparloitaliano.se ↗</span></a>
-      <a class="fc rb reveal" href="https://www.instagram.com/therollingbagels/" target="_blank" rel="noopener"><div><div class="nm" data-notl>The Rolling Bagels</div><p>New York-bagels, juice och kaffe på Odengatan.</p></div><span class="go" data-notl>@therollingbagels ↗</span></a>
-      <a class="fc ds reveal" href="https://www.danderydssaluhall.se/" target="_blank" rel="noopener"><div><div class="nm" data-notl>Danderyds Saluhall & Bageri</div><p>Bageri, saluhall och restaurang under samma tak.</p></div><span class="go" data-notl>danderydssaluhall.se ↗</span></a>
+      <a class="fc cp reveal" href="../cucina-povera/"><div><div class="nm" data-notl>cucina povera</div><p>Romersk focaccia, färsk pasta och tunna krispiga pizzor.</p></div><span class="go">Besök sidan →</span></a>
+      <a class="fc np reveal" href="../non-parlo-italiano/"><div><div class="nm" data-notl>Non Parlo Italiano</div><p>Italiensk-amerikansk middag i Vasastan.</p></div><span class="go">Besök sidan →</span></a>
+      <a class="fc rb reveal" href="../rolling-bagels/"><div><div class="nm" data-notl>The Rolling Bagels</div><p>New York-bagels, juice och kaffe på Odengatan.</p></div><span class="go">Besök sidan →</span></a>
+      <a class="fc ds reveal" href="../danderyds-saluhall/"><div><div class="nm" data-notl>Danderyds Saluhall & Bageri</div><p>Bageri, saluhall och restaurang under samma tak.</p></div><span class="go">Besök sidan →</span></a>
     </div>
   </div>
 </section>
@@ -522,6 +522,7 @@ window.onLang=()=>{show();renderLoc()};
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('.cr').forEach(i=>i.classList.add('in'));io.unobserve(e.target)}}),{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
+<script src="../familj.js"></script>
 <script src="en.js"></script><script src="../sv-en.js"></script>
 </body>
 </html>
