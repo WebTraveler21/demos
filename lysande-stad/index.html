@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Lysande Städ Stockholm – Städfirma i Stockholm</title>
+<meta name="description" content="Förslag på ny hemsida för Lysande Städ Stockholm – städfirma i Stockholm. Gjord av Nordlights.">
+<meta property="og:title" content="Lysande Städ Stockholm – er nya hemsida">
+<meta property="og:image" content="https://webtraveler21.github.io/demos/lysande-stad/preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23161514'/%3E%3Cpath d='M32 14l4 12h12l-10 7 4 12-10-8-10 8 4-12-10-7h12z' fill='%23e9e6e0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Caveat+Brush&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#ecE9e3;--paper2:#e0dcd4;--ink:#161514;--ink2:#2a2826;--muted:#5f5b55;--line:#cfc9bf;--pine:#7ccaa6;--pine2:#5aae88;--snow:#f7f6f3;--r1:12px;--r2:24px;--ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:clip}
+body{background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Archivo,system-ui,sans-serif;font-weight:900;letter-spacing:-.035em;line-height:1;text-wrap:balance}
+h2{font-size:clamp(2.1rem,4.6vw,3.5rem);margin-bottom:16px}
+p{text-wrap:pretty}
+.brush{font-family:"Caveat Brush",cursive;font-weight:400;letter-spacing:0;color:var(--pine)}
+section{padding:96px 0}@media(max-width:700px){section{padding:64px 0}}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.kicker::before{content:"";width:22px;height:2px;background:var(--pine)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:1rem;transition:transform .16s var(--ease),background .2s,color .2s;cursor:pointer;border:0;font-family:inherit}
+.btn:active{transform:scale(.97)}
+.btn-pine{background:var(--pine);color:var(--ink);box-shadow:0 10px 24px -14px rgba(194,141,63,.9)}
+.btn-ink{background:var(--ink);color:var(--snow)}
+.btn-line{border:1.5px solid currentColor}
+@media(hover:hover){.btn-pine:hover{background:#e6b56b}.btn-ink:hover{background:#000}.btn-line:hover{background:rgba(255,255,255,.08)}}
+.demobar{position:fixed;inset:0 0 auto 0;z-index:80;background:#14181b;color:#e8f2ff;font-size:.84rem;text-align:center;padding:8px 14px;line-height:1.4}
+.demobar a{font-weight:700;color:#7fdcff;text-decoration:underline}
+body{padding-top:36px}
+nav{position:sticky;top:36px;z-index:50;background:rgba(236,233,227,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Caveat Brush",cursive;font-size:1.75rem;line-height:1;white-space:nowrap}
+.logo .ab{font-family:Inter;font-size:.7rem;font-weight:700;letter-spacing:.14em;color:var(--muted);margin-top:6px}
+.screw{width:40px;height:40px;flex:none;will-change:transform}
+.navlinks{display:flex;gap:28px;font-size:.93rem;font-weight:500;color:var(--muted)}
+@media(hover:hover){.navlinks a:hover{color:var(--ink)}}
+.navr{display:flex;align-items:center;gap:12px}.navcta{min-height:42px;padding:10px 18px;font-size:.9rem}
+[data-lsw]{color:var(--ink);--lsw-on:var(--ink);--lsw-on-fg:#fff}
+@media(max-width:900px){.navlinks{display:none}}
+@media(max-width:600px){.navcta .num{display:none}.logo .ab{display:none}}
+@media(max-width:400px){.logo{font-size:1.45rem}.screw{width:32px;height:32px}.navcta{padding:10px 14px;font-size:.84rem}}
+
+.hero{position:relative;min-height:calc(100svh - 106px);display:flex;align-items:flex-end;padding:64px 0;color:var(--snow);overflow:hidden;background:var(--ink)}
+.hero .bg{position:absolute;inset:0;background:url(../_bild/stad-hero.jpg) center 60%/cover;transform:scale(1.06);animation:zoom 2.4s var(--ease) forwards}
+@keyframes zoom{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,21,20,.88),rgba(22,21,20,.5) 55%,rgba(22,21,20,.15)),linear-gradient(0deg,rgba(22,21,20,.75),transparent 55%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero h1{font-size:clamp(2.6rem,7.4vw,6.2rem);max-width:12ch;margin:6px 0 20px}
+.hero h1 .brush{display:block;font-size:.62em;margin-bottom:6px;transform:rotate(-2deg);transform-origin:left}
+.hero p.lead{max-width:52ch;font-size:1.12rem;color:#e4e1db;margin-bottom:28px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .kicker{color:#cfc9bf}
+.hero .facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);font-size:.92rem;color:#d6d2cb}
+.hero .facts b{color:var(--snow)}
+.rise{opacity:0;transform:translateY(18px);animation:rise .9s var(--ease) forwards}
+.rise:nth-child(2){animation-delay:.08s}.rise:nth-child(3){animation-delay:.16s}.rise:nth-child(4){animation-delay:.24s}.rise:nth-child(5){animation-delay:.32s}
+@keyframes rise{to{opacity:1;transform:none}}
+
+.svc .top{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:48px}
+.svc .top p{color:var(--muted);font-size:1.05rem;max-width:46ch}
+.list{border-top:2px solid var(--ink)}
+.item{display:grid;grid-template-columns:72px 1.1fr 1.4fr 40px;gap:24px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line);transition:background .2s}
+.item .n{font-family:Archivo;font-weight:800;color:var(--pine2);font-variant-numeric:tabular-nums;font-size:1rem}
+.item h3{font-size:clamp(1.35rem,2.4vw,1.9rem);letter-spacing:-.03em}
+.item p{color:var(--muted)}
+.item .go{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;transition:transform .2s var(--ease),background .2s,border-color .2s}
+@media(hover:hover){.item:hover{background:rgba(255,255,255,.35)}.item:hover .go{background:var(--pine);border-color:var(--pine);transform:rotate(-45deg)}}
+@media(max-width:800px){.svc .top{grid-template-columns:1fr;gap:12px}.item{grid-template-columns:44px 1fr 32px;gap:6px 14px;padding:20px 0}.item p{grid-column:2/3;font-size:.95rem}.item .go{grid-row:1/3;grid-column:3;width:32px;height:32px}}
+
+.proj{background:var(--ink);color:var(--snow)}
+.proj .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:center}
+.proj figure{position:relative;border-radius:var(--r2);overflow:hidden;aspect-ratio:4/3}
+.proj figure img{width:100%;height:100%;object-fit:cover}
+.proj figcaption{position:absolute;left:16px;bottom:16px;background:rgba(22,21,20,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:8px 14px;border-radius:999px;font-size:.85rem}
+.proj p{color:#c9c4bc;font-size:1.05rem;margin-bottom:22px}
+.proj .kicker{color:#a9a399}
+.ticks{list-style:none;display:grid;gap:12px;margin-bottom:30px}
+.ticks li{display:flex;gap:12px;align-items:flex-start}
+.ticks li::before{content:"";flex:none;width:18px;height:18px;margin-top:4px;border-radius:50%;background:var(--pine) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%23161514' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E") center/12px no-repeat}
+@media(max-width:860px){.proj .grid{grid-template-columns:1fr;gap:36px}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;counter-reset:s}
+.step{background:var(--snow);border-radius:var(--r2);padding:32px;position:relative;border:1px solid var(--line)}
+.step .num{font-family:"Caveat Brush";font-size:3.2rem;line-height:1;color:var(--pine2);margin-bottom:12px}
+.step h3{font-size:1.4rem;margin-bottom:8px;letter-spacing:-.02em}
+.step p{color:var(--muted)}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+
+.offert{background:var(--paper2)}
+.offert .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:start}
+.offert .side p{color:var(--muted);font-size:1.05rem;margin-bottom:28px;max-width:42ch}
+.cbox{display:grid;gap:14px}
+.cbox a{display:flex;align-items:center;gap:14px;font-weight:600}
+.cbox .ic{width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--snow);display:grid;place-items:center;flex:none}
+.cbox small{display:block;color:var(--muted);font-weight:500;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+form{background:var(--snow);border-radius:var(--r2);padding:32px;box-shadow:0 24px 48px -32px rgba(22,21,20,.45);display:grid;gap:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;padding:9px 15px;border-radius:999px;border:1.5px solid var(--line);font-size:.9rem;font-weight:600;transition:background .15s,border-color .15s,color .15s}
+.chips input:checked+span{background:var(--ink);border-color:var(--ink);color:var(--snow)}
+.chips input:focus-visible+span{outline:2px solid var(--pine2);outline-offset:2px}
+.fl{display:block;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.in2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+input[type=text],input[type=tel],textarea{width:100%;font:inherit;font-size:1rem;padding:13px 14px;border-radius:var(--r1);border:1.5px solid var(--line);background:#fff;color:var(--ink)}
+input:focus,textarea:focus{outline:none;border-color:var(--pine2)}
+textarea{min-height:120px;resize:vertical}
+.fnote{font-size:.85rem;color:var(--muted)}
+@media(max-width:860px){.offert .grid{grid-template-columns:1fr;gap:40px}.in2{grid-template-columns:1fr}form{padding:24px}}
+
+footer{background:var(--ink);color:#bdb8b0;padding:56px 0 40px;font-size:.92rem}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end}
+footer .logo{color:var(--snow);font-size:2.1rem}
+footer a{color:var(--snow)}
+.bbar{display:none}
+@media(max-width:700px){.bbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(236,233,227,.96);border-top:1px solid var(--line);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}.bbar .btn{min-height:46px;padding:10px}footer{padding-bottom:110px}}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.glink{color:inherit;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:600px){html{font-size:14.5px}.demobar{font-size:11px;padding:6px 10px;line-height:1.35}.demobar .dm{display:none}body{padding-top:42px}nav{top:42px}.hero{min-height:calc(100svh - 112px)}.hero h1{font-size:2.6rem}h2{font-size:2rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rise,.reveal{opacity:1;transform:none}.hero .bg{transform:none}}
+</style>
+<style>.ex-note{position:absolute;right:16px;bottom:16px;z-index:3;font-size:.72rem;color:#d6d2cb;background:rgba(0,0,0,.45);padding:5px 10px;border-radius:999px}</style>
+</head>
+<body>
+<div class="demobar">✨ Förslag på ny hemsida för Lysande Städ Stockholm – gjord av <a href="https://thenordlights.com" target="_blank" rel="noopener">Nordlights</a>. Bilderna är exempel. Gillar ni den? <a href="https://wa.me/306988214186">WhatsApp</a><span class="dm"> · <a href="mailto:taxirxania21@gmail.com?subject=Hemsida%20Lysande%20St%C3%A4d%20Stockholm">taxirxania21@gmail.com</a></span></div>
+<nav><div class="wrap">
+ <a href="#top" class="logo" aria-label="Lysande Städ Stockholm"><svg class="screw" id="screw" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#161514"/><circle cx="24" cy="24" r="17" fill="none" stroke="#e9e6e0" stroke-width="1.5" opacity=".35"/><path d="M24 10.5l3.6 8.4 8.9-1.2-5.4 7.3 5.4 7.3-8.9-1.2L24 37.5l-3.6-8.4-8.9 1.2 5.4-7.3-5.4-7.3 8.9 1.2z" fill="#e9e6e0"/></svg><span data-notl>Lysande Städ Stockholm</span></a>
+ <div class="navlinks"><a href="#tjanster">Tjänster</a><a href="#projekt">Projekt</a><a href="#sa-funkar-det">Så går det till</a><a href="#offert">Kontakt</a></div>
+ <span class="navr"><a href="#offert" class="btn btn-ink navcta">Kontakt</a></span>
+</div></nav>
+<header class="hero" id="top">
+ <div class="bg" role="img" aria-label="Exempelbild"></div>
+ <div class="wrap">
+  <span class="kicker rise">Städfirma i Stockholm</span>
+  <h1 class="rise"><span class="brush">Rent hemma –</span>utan att lyfta ett finger.</h1>
+  <p class="lead rise">Hemstädning, flyttstädning, storstädning och fönsterputs – noggrant och pålitligt.</p>
+  <div class="ctas rise"><a href="#offert" class="btn btn-pine">Begär offert</a></div>
+  <div class="facts rise"><span><b>Stockholm</b> med omnejd</span><span>Fast pris i offerten</span><span>Svar inom 24 h</span></div>
+ </div>
+ <span class="ex-note">Exempelbild</span>
+</header>
+<section class="svc" id="tjanster"><div class="wrap">
+ <div class="top reveal"><div><span class="kicker">Tjänster</span><h2>Städ som<br>märks.</h2></div><p>Samma noggrannhet varje gång – och tydliga priser i förväg.</p></div>
+ <div class="list"><a href="#offert" class="item reveal" data-t="Hemstädning"><span class="n">01</span><h3>Hemstädning</h3><p>Regelbunden städning varje eller varannan vecka.</p><span class="go">→</span></a><a href="#offert" class="item reveal" data-t="Flyttstädning"><span class="n">02</span><h3>Flyttstädning</h3><p>Godkänd flyttstäd – vi gör om om något fattas.</p><span class="go">→</span></a><a href="#offert" class="item reveal" data-t="Storstädning"><span class="n">03</span><h3>Storstädning</h3><p>När hela hemmet behöver en ordentlig omgång.</p><span class="go">→</span></a><a href="#offert" class="item reveal" data-t="Fönsterputs"><span class="n">04</span><h3>Fönsterputs</h3><p>Skinande fönster – inne och ute.</p><span class="go">→</span></a><a href="#offert" class="item reveal" data-t="Kontor"><span class="n">05</span><h3>Kontorsstädning</h3><p>Ett rent kontor för hela teamet.</p><span class="go">→</span></a><a href="#offert" class="item reveal" data-t="Byggstäd"><span class="n">06</span><h3>Byggstädning</h3><p>Efter renoveringen – vi tar hand om dammet.</p><span class="go">→</span></a></div>
+</div></section>
+<section class="proj" id="projekt"><div class="wrap grid">
+ <figure class="reveal"><img src="../_bild/stad-proj.jpg" alt="Exempelbild" loading="lazy"><figcaption>Exempelbild – byts mot era egna projekt</figcaption></figure>
+ <div class="reveal"><span class="kicker">Projekt</span><h2>Kom hem till <span class="brush">rent</span>.</h2><p>Noggrant, pålitligt och med samma kontaktperson.</p>
+  <ul class="ticks"><li>Fast pris i offerten – inga överraskningar</li><li>Personlig kontakt hela vägen</li><li>Stockholm med omnejd</li></ul>
+  <a href="#offert" class="btn btn-pine">Berätta om ditt projekt</a></div>
+</div></section>
+<section id="sa-funkar-det"><div class="wrap">
+ <div class="reveal"><span class="kicker">Så går det till</span><h2>Tre enkla steg.</h2></div>
+ <div class="steps">
+  <div class="step reveal"><div class="num">1</div><h3>Berätta</h3><p>Ring eller skicka en förfrågan – kort om vad du behöver, gärna med bilder.</p></div>
+  <div class="step reveal"><div class="num">2</div><h3>Vi tittar på plats</h3><p>Vi kommer ut, mäter och pratar igenom lösningen med dig.</p></div>
+  <div class="step reveal"><div class="num">3</div><h3>Offert & start</h3><p>Du får en tydlig offert. Säger du ja bokar vi in starten.</p></div>
+ </div>
+</div></section>
+<section class="offert" id="offert"><div class="wrap grid">
+ <div class="side reveal"><span class="kicker">Offert</span><h2>Vad behöver du hjälp med?</h2><p>Fyll i formuläret – det öppnar ett färdigt mejl till oss. Eller ring direkt, det går ofta snabbast.</p><div class="cbox"><a href="mailto:lysande.sb@gmail.com"><span class="ic">@</span><span><small>E-post</small><span data-notl>lysande.sb@gmail.com</span></span></a><a href="https://www.google.com/maps/search/?api=1&query=Lysande%20St%C3%A4d%20Stockholm%20Stockholm" target="_blank" rel="noopener"><span class="ic">⌂</span><span><small>Område</small><span data-notl>Stockholm med omnejd</span></span></a></div></div>
+ <form id="f" class="reveal" novalidate>
+  <div><span class="fl">Typ av jobb</span><div class="chips" id="chips"><label><input type="checkbox" value="Hemstädning"><span>Hemstädning</span></label><label><input type="checkbox" value="Flyttstädning"><span>Flyttstädning</span></label><label><input type="checkbox" value="Storstädning"><span>Storstädning</span></label><label><input type="checkbox" value="Fönsterputs"><span>Fönsterputs</span></label><label><input type="checkbox" value="Kontor"><span>Kontor</span></label><label><input type="checkbox" value="Byggstäd"><span>Byggstäd</span></label></div></div>
+  <div class="in2"><div><label class="fl" for="nm">Namn</label><input type="text" id="nm" autocomplete="name"></div><div><label class="fl" for="tel">Telefon</label><input type="tel" id="tel" autocomplete="tel"></div></div>
+  <div><label class="fl" for="ort">Ort</label><input type="text" id="ort" placeholder="t.ex. Stockholm"></div>
+  <div><label class="fl" for="msg">Om jobbet</label><textarea id="msg" placeholder="Typ av städning, ungefär hur stort, och när?"></textarea></div>
+  <button class="btn btn-ink" type="submit">Skicka förfrågan →</button>
+  <p class="fnote">Bifoga gärna bilder i mejlet – då blir offerten mer exakt.</p>
+ </form>
+</div></section>
+<footer><div class="wrap row"><div><div class="logo" data-notl>Lysande Städ Stockholm</div><p>Städfirma i Stockholm</p></div><p>© 2026 Lysande Städ Stockholm</p></div></footer>
+<div class="bbar"><a href="#offert" class="btn btn-pine">Begär offert</a></div>
+<script>
+document.querySelectorAll('.item[data-t]').forEach(a=>a.addEventListener('click',()=>{const c=document.querySelector('#chips input[value="'+a.dataset.t+'"]');if(c)c.checked=true}));
+document.getElementById('f').addEventListener('submit',ev=>{ev.preventDefault();const typ=[...document.querySelectorAll('#chips input:checked')].map(i=>i.value).join(', ')||'-';const v=id=>document.getElementById(id).value.trim();
+ location.href='mailto:lysande.sb@gmail.com?subject='+encodeURIComponent('Offertförfrågan – '+typ)+'&body='+encodeURIComponent(['Typ av jobb: '+typ,'Namn: '+v('nm'),'Telefon: '+v('tel'),'Ort: '+v('ort'),'',v('msg')].join('\n'))});
+const sc=document.getElementById('screw');let tk=0;addEventListener('scroll',()=>{if(tk)return;tk=requestAnimationFrame(()=>{sc.style.transform='rotate('+(scrollY*.35)+'deg)';tk=0})},{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>
